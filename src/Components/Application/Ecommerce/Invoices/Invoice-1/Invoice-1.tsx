@@ -12,14 +12,15 @@ import { Invoice, InvoiceOne } from "@/Constant";
 import Breadcrumbs from "@/CommonComponent/Breadcrumbs/Breadcrumbs";
 
 const InvoiceOneContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-  });
+   const contentRef = useRef<HTMLDivElement | null>(null);
+
+   const handlePrint = useReactToPrint({
+     contentRef,
+   });
   return (
     <>
       <Breadcrumbs mainTitle={InvoiceOne} parent={Invoice} />
-      <div ref={componentRef}>
+      <div ref={contentRef}>
         <Container>
           <Card className="invoice-1">
             <CardBody>
@@ -38,9 +39,9 @@ const InvoiceOneContainer = () => {
                     <InvoiceOrder />
                   </tr>
                 </tbody>
-                <tbody style={{ display: "flex" , alignItems:"center" , justifyContent: "space-between"}}>
+                <tbody style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <InvoiceSign />
-                  <InvoiceButtons handlePrint={handlePrint}/>
+                  <InvoiceButtons handlePrint={handlePrint} />
                 </tbody>
               </Table>
             </CardBody>

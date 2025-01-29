@@ -7,14 +7,16 @@ import { useReactToPrint } from "react-to-print";
 
 const InterviewMail = () => {
   const {interviewEmail} = useAppSelector((state)=>state.letterBox)
-  const componentRef = useRef<HTMLDivElement | null>(null);
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-  });
+ const contentRef = useRef<HTMLDivElement | null>(null);
+
+ const handlePrintData = useReactToPrint({
+   contentRef,
+ });
+  
   return (
     <Card className={`email-body email-read ${interviewEmail ? "show" : "hide"}`}>
       <InterviewMailHeader />
-      <InterviewMailBody ref={componentRef} handlePrint={handlePrint} />
+      <InterviewMailBody ref={contentRef} handlePrint={handlePrintData} />
     </Card>
   );
 };

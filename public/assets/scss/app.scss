@@ -56,12 +56,19 @@
 // react-bootstrap-typeahead
 @import "react-bootstrap-typeahead/css/Typeahead.css";
 
-//react-vertical-timeline-component
-@import "react-vertical-timeline-component/style.min.css";
-
 //slick-carousel
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+
+//tour
+@import "@sjmc11/tourguidejs/src/scss/tour.scss";
+
+//swiper
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "swiper/css/grid";
+@import "swiper/css/effect-fade";
 
 // Style Scss //
 @import "./style.scss";

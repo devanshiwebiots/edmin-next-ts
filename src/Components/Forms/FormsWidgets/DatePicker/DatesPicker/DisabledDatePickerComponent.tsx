@@ -13,11 +13,13 @@ const DisabledDatePickerComponent = () => {
     return (
       <Row>
         <Col xxl="3">
-          <Label className="box-col-12 text-start" check>{DisabledDates}</Label>
+          <Label className="box-col-12 text-start" check>
+            {DisabledDates}
+          </Label>
         </Col>
         <Col xxl="9" className="box-col-12">
           <InputGroup className="flatpicker-calender">
-            <ReactDatePicker className="form-control" selected={selectedDate} onChange={(date: Date) => setSelectedDate(date)} excludeDates={disabledDates} placeholderText="Select a date other than today or yesterday" />
+            <ReactDatePicker className="form-control" selected={selectedDate} onChange={(date: Date | null) => setSelectedDate(date)} excludeDates={disabledDates} placeholderText="Select a date other than today or yesterday" />
           </InputGroup>
         </Col>
       </Row>

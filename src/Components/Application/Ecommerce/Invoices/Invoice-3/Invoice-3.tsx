@@ -11,15 +11,15 @@ import { Invoice, InvoiceThree } from "@/Constant";
 import Breadcrumbs from "@/CommonComponent/Breadcrumbs/Breadcrumbs";
 
 const InvoiceThreeContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef,
   });
   return (
     <>
       <Breadcrumbs mainTitle={InvoiceThree} parent={Invoice} />
-      <div ref={componentRef}>
+      <div ref={contentRef}>
         <Container className="invoice-2">
           <Card>
             <CardBody>

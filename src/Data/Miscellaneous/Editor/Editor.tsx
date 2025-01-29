@@ -25,7 +25,7 @@ export const htmlData = `
     <Row>
         <Col xl="6">
             <H3>Ace Text editor</H3>
-            <small>Mofi Admin panel</small>
+            <small>Edmin Admin panel</small>
         </Col>
         <Col xl="6">
             <Breadcrumb class="pull-right">

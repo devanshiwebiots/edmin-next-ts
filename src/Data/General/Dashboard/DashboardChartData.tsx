@@ -202,7 +202,6 @@ export const investingChartData: ApexOptions = {
     hover: {
       filter: {
         type: "darken",
-        value: 1,
       },
     },
   },
@@ -210,8 +209,6 @@ export const investingChartData: ApexOptions = {
   plotOptions: {
     bar: {
       horizontal: false,
-      // endingShape: "rounded",
-      // startingShape: "rounded",
       borderRadius: 2,
       columnWidth: "50%",
     },
@@ -1666,11 +1663,6 @@ export const salesSummaryChartData: ApexOptions = {
     enabled: false,
   },
   states: {
-    normal: {
-      filter: {
-        type: "none",
-      },
-    },
     hover: {
       filter: {
         type: "none",

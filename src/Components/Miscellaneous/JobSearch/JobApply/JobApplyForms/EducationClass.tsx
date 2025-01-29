@@ -6,10 +6,10 @@ import { useState } from "react";
 
 const EducationClass = () => {
     const TypeHeadOptionsData: string[] = ["Student", "Bachelor", "Master", "Associate"];
-    const [startDate, setStartDate] = useState(new Date());
-    const [endDate, setEndDate] = useState(new Date());
-    const handleChange = (date: Date) => setStartDate(date);
-    const handleChange1 = (date: Date) => setEndDate(date);
+    const [startDate, setStartDate] = useState<Date | null>(new Date());
+    const [endDate, setEndDate] = useState<Date | null>(new Date());
+    const handleChange = (date: Date | null) => setStartDate(date);
+    const handleChange1 = (date: Date | null) => setEndDate(date);
   return (
     <Form className="theme-form">
       <Row>

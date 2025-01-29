@@ -6,7 +6,7 @@ import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { removeTask } from "@/Redux/Reducers/TaskSlice";
 import React, { LegacyRef } from "react";
 
-const CreatedByMe = React.forwardRef((props, ref: LegacyRef<HTMLDivElement> | undefined) => {
+const CreatedByMe =() => {
   const { allTask } = useAppSelector((state) => state.task);
   const dispatch = useAppDispatch();
 
@@ -30,7 +30,7 @@ const CreatedByMe = React.forwardRef((props, ref: LegacyRef<HTMLDivElement> | un
   };
 
   return (
-    <div ref={ref}>
+    <div>
       <CardBody className="p-0">
         <div className="taskadd">
           <Table borderless responsive>
@@ -65,6 +65,6 @@ const CreatedByMe = React.forwardRef((props, ref: LegacyRef<HTMLDivElement> | un
       </CardBody>
     </div>
   );
-});
+};
 
 export default CreatedByMe;

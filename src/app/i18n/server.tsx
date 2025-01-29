@@ -25,16 +25,16 @@ export async function detectLanguage() {
   const headers = getHeaders();
 
   let language;
-  if (!language && cookies.has(cookieName)) {
-    language = acceptLanguage.get(cookies.get(cookieName)?.value);
-  }
-  if (!language) {
-    language = acceptLanguage.get(headers.get("Accept-Language"));
-  }
-  if (!language) {
-    language = fallbackLng;
-  }
-  return language;
+   if (!language && (await cookies).has(cookieName)) {
+     language = acceptLanguage.get((await cookies).get(cookieName)?.value);
+   }
+   if (!language) {
+     language = acceptLanguage.get((await headers).get("Accept-Language"));
+   }
+   if (!language) {
+     language = fallbackLng;
+   }
+   return language;
 }
 
 export const getServerTranslations = cache(async (ns: string, options: { keyPrefix?: string } = {}) => {

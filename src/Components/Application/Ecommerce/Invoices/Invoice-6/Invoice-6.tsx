@@ -10,15 +10,15 @@ import InvoiceSixTable from "./InvoiceSixTable";
 import UserDetails from "./UserDetails";
 
 const InvoiceSixContainer = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+  const contentRef = useRef<HTMLDivElement | null>(null);
 
   const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
+    contentRef,
   });
   return (
     <>
       <Breadcrumbs mainTitle={InvoiceSix} parent={Invoice} />
-      <div ref={componentRef}>
+      <div ref={contentRef}>
         <Container>
           <Row>
             <Col sm="12">
