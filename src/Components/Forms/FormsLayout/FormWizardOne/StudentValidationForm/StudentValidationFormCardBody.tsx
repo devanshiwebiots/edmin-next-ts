@@ -31,7 +31,7 @@ const StudentValidationFormCardBody = () => {
       <StudentForm
         handleImageLabelClick={handleImageLabelClick}      
         imageUrl={imageUrl}
-        fileInputRef={fileInputRef as any}
+        fileInputRef={fileInputRef}
         getUserData={getUserData}
         studentValidationForm={studentValidationForm}
         level={studentLevel}

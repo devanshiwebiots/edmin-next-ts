@@ -1,11 +1,12 @@
-import { Href } from "@/Constant";
-import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
-import { removeTask } from "@/Redux/Reducers/TaskSlice";
 import { Link, MoreHorizontal, Trash2 } from "react-feather";
 import { CardBody, Table } from "reactstrap";
 import SweetAlert from "sweetalert2";
+import { Href } from "@/Constant";
+import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
+import { removeTask } from "@/Redux/Reducers/TaskSlice";
+import React, { LegacyRef } from "react";
 
-const CreatedByMe =() => {
+const CreatedByMe = React.forwardRef((props, ref: LegacyRef<HTMLDivElement> | undefined) => {
   const { allTask } = useAppSelector((state) => state.task);
   const dispatch = useAppDispatch();
 
@@ -29,7 +30,7 @@ const CreatedByMe =() => {
   };
 
   return (
-    <div>
+    <div ref={ref}>
       <CardBody className="p-0">
         <div className="taskadd">
           <Table borderless responsive>
@@ -64,6 +65,6 @@ const CreatedByMe =() => {
       </CardBody>
     </div>
   );
-};
+});
 
 export default CreatedByMe;

@@ -72,39 +72,39 @@ export const commonFooterData = [
 //Tour
 export const tourSteps = [
   {
-    target: ".step1",
-    content: "This is Edmin profile",
+    selector: ".step1",
+    content: "This is Mofi profile",
   },
   {
-    target: ".step2",
-    content: "Change Edmin profile image here",
+    selector: ".step2",
+    content: "Change Mofi profile image here",
   },
   {
-    target: ".step3",
+    selector: ".step3",
     content: "This is your profile details",
   },
   {
-    target: ".step4",
+    selector: ".step4",
     content: "This is your social details",
   },
   {
-    target: ".step5",
+    selector: ".step5",
     content: "This is your first Post",
   },
   {
-    target: ".step6",
+    selector: ".step6",
     content: "This is your social details",
   },
   {
-    target: ".step7",
+    selector: ".step7",
     content: "This is your social details",
   },
   {
-    target: ".step8",
+    selector: ".step8",
     content: "This is your social details",
   },
   {
-    target: ".step9",
+    selector: ".step9",
     content: "This is your social details",
   },
 ];

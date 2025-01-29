@@ -361,6 +361,7 @@
         height: 18px;
         vertical-align: sub;
         stroke: var(--light-font);
+        // transition: 0.5s all;
         transition: color 0.3s;
         &.feather {
           width: 16px;

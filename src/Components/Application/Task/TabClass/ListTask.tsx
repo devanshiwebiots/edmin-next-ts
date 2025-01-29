@@ -6,24 +6,18 @@ import { Card, CardHeader } from "reactstrap";
 import CreatedByMe from "./CreatedByMe";
 
 const ListOfTask = () => {
- const contentRef = useRef<HTMLDivElement | null>(null);
-
- const handlePrint = useReactToPrint({
-   contentRef,
- });
+  const componentRef = useRef<HTMLDivElement | null>(null);
+  const handlePrint = useReactToPrint({
+    content: () => componentRef.current,
+  });
 
   return (
     <Card className="mb-0">
       <CardHeader className="d-flex">
         <h4 className="mb-0">{CreatedByMeHeading}</h4>
-        <a href={Href} onClick={()=>handlePrint()} className="f-w-600 font-primary">
-          <Printer className="me-2" />
-          {Print}
-        </a>
+        <a href={Href} onClick={handlePrint} className="f-w-600 font-primary"><Printer className="me-2"/>{Print}</a>
       </CardHeader>
-      <div ref={contentRef}>
-        <CreatedByMe />
-      </div>
+      <CreatedByMe ref={componentRef}/>
     </Card>
   );
 };

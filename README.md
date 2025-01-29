@@ -7,6 +7,8 @@
  Next :- 14.1.0
 ------------------------
 
+Please check Edmin-next Documentation all installation steps include in Documentation
+Documentation link => https://docs.pixelstrap.net/next/edmin/document/index.html
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

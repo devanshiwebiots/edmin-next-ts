@@ -1,29 +1,32 @@
-import Link from "next/link";
+import { toast } from "react-toastify";
 import { FormGroup } from "reactstrap";
 
 const SocialApp = () => {
+  const handlesubmit = () => {
+    toast.error("This is only demo purpose, click on the Sign In button to login.");
+  };
   return (
     <FormGroup>
-      <ul className="login-social">
+     <ul className="login-social">
         <li>
-          <Link href="https://www.linkedin.com/login" target="_blank">
+          <span onClick={handlesubmit}>
             <i className="icon-linkedin" />
-          </Link>
+          </span>
         </li>
         <li>
-          <Link href="https://twitter.com/login?lang=en" target="_blank">
+          <span onClick={handlesubmit}>
             <i className="icon-twitter" />
-          </Link>
+          </span>
         </li>
         <li>
-          <Link href="https://www.facebook.com/" target="_blank">
+          <span onClick={handlesubmit}>
             <i className="icon-facebook" />
-          </Link>
+          </span>
         </li>
         <li>
-          <Link href="https://www.instagram.com/" target="_blank">
+          <span onClick={handlesubmit}>
             <i className="icon-instagram" />
-          </Link>
+          </span>
         </li>
       </ul>
     </FormGroup>

@@ -1,4 +1,4 @@
-import React, { Ref } from "react";
+import React, { LegacyRef } from "react";
 import { ImagePath, Send } from "@/Constant";
 import InboxOption from "./InboxOption";
 import UserFooter from "./UserFooter";
@@ -8,7 +8,7 @@ import { Button } from "reactstrap";
 import Image from "next/image";
 import FeatherIcons from "@/Components/Forms/FormsLayout/FormWizardOne/VerticalValidationWizard/FeatherIconCom";
 
-const InterviewMailBody = React.forwardRef(({ handlePrint }: MailPropsType, ref: Ref<HTMLDivElement> | undefined) => {
+const InterviewMailBody = React.forwardRef(({ handlePrint }: MailPropsType, ref: LegacyRef<HTMLDivElement> | undefined) => {
   return (
     <div ref={ref}>
       <div className="mail-body-wrapper">

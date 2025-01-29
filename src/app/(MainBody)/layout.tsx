@@ -11,7 +11,6 @@ import Store from "@/Redux/Store";
 import ChildrenType from "@/Type/Layout/Header";
 import React, { useEffect } from "react";
 import { Provider } from "react-redux";
-import { ToastContainer } from "react-toastify";
 
 const RootLayout: React.FC<ChildrenType> = ({ children }) => {
   const { layout } = useAppSelector((state) => state.themeCustomizer);
@@ -53,7 +52,6 @@ const RootLayout: React.FC<ChildrenType> = ({ children }) => {
         </div>
       </main>
       <ThemeCustomizer />
-      <ToastContainer />
       <TapTop />
     </Provider>
   );

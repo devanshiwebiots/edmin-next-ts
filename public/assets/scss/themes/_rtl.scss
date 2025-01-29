@@ -1708,6 +1708,15 @@ html[dir="rtl"] {
         padding-left: 20px;
       }
     }
+    // svg {
+    //   @include media-breakpoint-down(sm) {
+    //     right: unset;
+    //     left: 8px;
+    //     top: 0 !important;
+    //     width: 40px !important;
+    //     height: 40px !important;
+    //   }
+    // }
   }
   .ql-toolbar {
     &.ql-snow {

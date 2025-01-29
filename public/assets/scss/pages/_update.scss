@@ -121,60 +121,6 @@
         }
     }
 }
-.tree-container {
-    z-index: 0 !important;
-    position: relative;
-    .checkbox {
-        input {
-          opacity: 1 !important; 
-        }
-    }
-}
-.team-member {
-    .team-chart {
-        overflow: hidden;
-    }
-}
-.right-sidebar-chat {
-    .msger-inputarea {
-        position: relative;
-        .epr-header {
-            padding: 0px;
-            div {
-                padding: 0px;
-                .epr-search-container {
-                    padding: 0px;
-                    margin-bottom: 15px;
-                } 
-            }
-        } 
-        .epr-body {
-            .epr-emoji-category-content {
-                margin: 0px;
-            }
-        }
-        input {
-            width: 100%;
-            &:focus {
-                border: none !important;
-            }
-        }
-        .EmojiPickerReact{
-            right: 0;
-            bottom: 52px; 
-            position: absolute; 
-        }
-    }
-}
-.disabled-container {
-    z-index: 0 !important;
-    position: relative;
-    .checkbox {
-        input {
-          opacity: 1 !important; 
-        }
-    }
-}
 .ace-monokai {
     .ace_print-margin {
         background-color: transparent !important;
@@ -186,54 +132,6 @@
             span {
                 color: var(--light-font);
             }
-        }
-    }
-    .right-sidebar-chat {
-        .msger-inputarea {
-            .EmojiPickerReact {
-                background-color: $dark-body-background !important;
-                border-color: var(--body-font-color) !important;
-            }	
-        }
-    }
-    .epr-emoji-category {
-        color: $white;
-        background-color: $dark-body-background !important;
-    }
-    .epr-main {
-        .epr-body {
-            .epr-emoji-list {
-                .epr-emoji-category {
-                    h2 {
-                        color: $white;
-                        background-color: $dark-body-background !important;
-                        border-color: var(--body-font-color) !important;
-                    }
-                }
-            }
-        }
-    } 
-    .msger-inputarea {
-        .epr-search-container {
-            input {
-                background-color: $dark-body-background !important;
-                color: $white !important; 
-                border-color: var(--body-font-color) !important;
-                :focus {
-                    border-color: var(--body-font-color) !important;
-                }
-            }
-        }
-    }
-    .rmdp-ep-arrow {
-        border-color: var(--body-font-color) !important;
-    }
-    .rmdp-header-values {
-        color: $white; 
-    } 
-    .rmdp-day {
-        span {
-            color: $white;
         }
     }
     .ck.ck-editor__main {
@@ -254,30 +152,6 @@
                 }
             }
         }
-    }
-    .k-treeview-leaf {
-        &:hover {
-            color: var(--body-font-color) !important;
-            background-color: $dark-body-background !important;
-        }
-    }
-    .disabled-container {
-        .k-checkbox-wrap {
-            .k-rounded-md {
-                background-color: $dark-body-background !important;
-            }
-        }			
-    }
-    .tree-container {
-        .k-checkbox-wrap {
-            .k-rounded-md {
-                background-color: $dark-body-background !important;
-            }
-        }
-    }
-    .k-treeview-leaf.k-hover {
-        color: var(--body-font-color) !important;
-        background-color: $dark-body-background !important;
     }
     .ck-rounded-corners {
         .ck.ck-editor__main {
@@ -543,28 +417,6 @@
         }
     }
 }
-.cd-timeline-block {
-    .cd-timeline-content {
-        width: 44%;
-        background-color: var(--body-color);
-        border-radius: 4px; 
-        @media (max-width: 1199px) {
-            width: 100%; 
-        }
-    }
-}
-.vertical-timeline--two-columns {
-	.vertical-timeline-element-content {
-		margin-left: 0;
-		padding: 1.5em;
-		width: 44%;
-	}
-}
-.vertical-timeline-element-content {
-	box-shadow: unset;
-	background-color: var(--body-color); 
-}
-
 // dropdown css end
 // accordian css start
 .default-according {
@@ -794,29 +646,6 @@
             .owl-item {
                 width: 225.333px !important;
             }
-        }
-    }
-}
-.swiper-button-prev {
-    width: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
-    &:after {
-        color: $white;
-        font-size: 12px !important;
-    }
-}
-.swiper-button-next {
-    width: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
-    &:after {
-        color: $white;
-        font-size: 12px !important;  
-    }
-}
-.swiper-pagination {
-    .swiper-pagination-bullet {
-        &.swiper-pagination-bullet-active {
-            background-color: $primary-color !important; 
         }
     }
 }

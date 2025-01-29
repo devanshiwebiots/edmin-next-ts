@@ -319,6 +319,11 @@ export var skillChart: ApexOptions = {
     labels: {
       colors: "#2C323F",
     },
+    // markers: {
+    //   width: 86,
+    //   height: 18,
+    //   radius: 3,
+    // },
   },
   colors: [secondary, primary, "#FD7E40"],
   responsive: [
@@ -1506,6 +1511,7 @@ export var orderStatusChart: ApexOptions = {
     stacked: true,
     animations: {
       enabled: true,
+      easing: "linear",
       dynamicAnimation: {
         speed: 1000,
       },

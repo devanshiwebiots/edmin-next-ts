@@ -7,8 +7,8 @@ import { Col, FormGroup, Input, Label } from "reactstrap";
 export const TaskRadioRow = () => {
   const timeList = ["7:00 am", "7:30 am", "8:00 am", "8:30 am", "9:00 am", "9:30 am", "10:00 am", "10:30 am", "11:00 am", "11:30 am", "12:00 am", "12:30 am", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm"];
 
-  const [startDate, setStartDate] = useState<Date | null>(new Date());
-  const handleChange = (date: Date | null) => setStartDate(date);
+  const [startDate, setStartDate] = useState(new Date());
+  const handleChange = (date: Date) => setStartDate(date);
   const { validation } = useAppSelector((state) => state.task);
 
   return (

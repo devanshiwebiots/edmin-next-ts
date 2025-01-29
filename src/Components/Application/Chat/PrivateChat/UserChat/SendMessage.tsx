@@ -1,7 +1,8 @@
 import { TypeMessageHere } from "@/Constant";
 import { useAppDispatch, useAppSelector } from "@/Redux/Hooks";
 import { replyByUserAsync, sendMessageAsync } from "@/Redux/Reducers/ChatSlice";
-import EmojiPicker from "emoji-picker-react";
+import data from "@emoji-mart/data";
+import Picker from "@emoji-mart/react";
 import { FormEvent, useState } from "react";
 import { Button, Form, Input } from "reactstrap";
 import ChatDropMenu from "./ChatDropMenu";
@@ -43,13 +44,13 @@ const SendMessage = () => {
     <Form className="msger-inputarea py-0" onSubmit={handleMessagePress}>
       <ChatDropMenu />
       <Input className="msger-input two uk-textarea shadow-none" type="text" placeholder={TypeMessageHere} value={messageInput} onChange={(e) => handleMessageChange(e.target.value)} />
-      <div>{showEmojiPicker ? <EmojiPicker onEmojiClick={({ emoji }) => addEmoji(emoji)} /> : null}</div>
       <div className="open-emoji">
-        <div className="second-btn uk-button" onClick={() => setShowEmojiPicker(!showEmojiPicker)} />
+        {showEmojiPicker ? (<Picker data={data} onEmojiSelect={(e: { native: string; }) => { addEmoji(e.native)}}/>) : null}
       </div>
-      <Button color="primary" className="msger-send-btn">
-        <i className="fa fa-location-arrow" />
-      </Button>
+      <div className="smiley-box">
+        <div className="picker second-btn uk-button px-1" onClick={() => setShowEmojiPicker(!showEmojiPicker)}/>
+      </div>
+      <Button color="primary" className="msger-send-btn" ><i className="fa fa-location-arrow" /></Button>
     </Form>
   );
 };

@@ -1,17 +1,21 @@
 "use client";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import { Col, Container, Row } from "reactstrap";
 import Login from "./Login";
-import { useEffect } from "react";
-import Cookies from "js-cookie";
-import { useRouter } from "next/navigation";
 
 const UserLogin = () => {
+  const { data: session } = useSession();
   const router = useRouter();
 
   useEffect(() => {
-    const authentication = Cookies.get("edmin_login");
-    if (authentication) router.push("/dashboard/default");
-  }, []);
+    if (session) {
+      router.push("/dashboard/ecommerce");
+    }
+  }, [session, router]);
+
+  if (session) return null;
 
   return (
     <Container fluid className="p-0">

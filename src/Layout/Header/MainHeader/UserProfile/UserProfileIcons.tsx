@@ -6,12 +6,11 @@ import React from "react";
 import Cookies from "js-cookie";
 import { Href, Logout } from "@/Constant";
 import { LogOut } from "react-feather";
+import { signOut } from "next-auth/react";
 
-const UserProfileIcons = () => {
-  const router = useRouter();
+const UserProfileIcons = () => {  
   const handleClick = () => {
-    Cookies.remove("edmin_login");
-    router.push(`/auth/login`);
+   signOut();
   };
   return (
     <ul>

@@ -202,6 +202,7 @@ export const investingChartData: ApexOptions = {
     hover: {
       filter: {
         type: "darken",
+        value: 1,
       },
     },
   },
@@ -209,6 +210,8 @@ export const investingChartData: ApexOptions = {
   plotOptions: {
     bar: {
       horizontal: false,
+      // endingShape: "rounded",
+      // startingShape: "rounded",
       borderRadius: 2,
       columnWidth: "50%",
     },
@@ -519,6 +522,7 @@ export const taskSummaryChartData: ApexOptions = {
           strokeColor: "#fff",
           strokeWidth: 3,
           shape: "circle",
+          // radius: 2,
         },
       },
     ],
@@ -1662,6 +1666,11 @@ export const salesSummaryChartData: ApexOptions = {
     enabled: false,
   },
   states: {
+    normal: {
+      filter: {
+        type: "none",
+      },
+    },
     hover: {
       filter: {
         type: "none",
@@ -1819,6 +1828,7 @@ export const totalRevenueChartData: ApexOptions = {
           size: 5,
           fillColor: primary, // Change the color to your desired color
           strokeColor: primary, // Change the color to your desired color
+          // radius: 5,
         },
         label: {
           borderWidth: 2,

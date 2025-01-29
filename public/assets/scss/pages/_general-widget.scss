@@ -664,6 +664,7 @@
                     }
                 }
                 @media (max-width: 380px) {
+                    // display: none;
                 }
             }
             @include media-breakpoint-up(md) {
@@ -671,6 +672,10 @@
                     width: 100% !important;
                     display: block !important;
                 }
+            }
+            @media (max-width: 380px) {
+                // width: 100% !important;
+                // display: block !important;
             }
         }
         .badge {

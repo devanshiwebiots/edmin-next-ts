@@ -986,6 +986,9 @@
 .vertical-timeline-element-content {
   box-shadow: unset;
   background-color: var(--body-color);
+  // [data-theme="dark"] & {
+  //   background-color: var(--body-color);  
+  // }
 }
 .vertical-timeline-element-content-arrow {
   border-right: 7px solid var(--body-color);
@@ -993,6 +996,13 @@
     border-left: 7px solid var(--body-color);
     border-right: unset;
   }
+  // [data-theme="dark"] & {
+  //   border-right-color: var(--body-color); 
+  //   [dir="rtl"] & {
+  //     border-left-color: $light-color;
+  //     border-right-color: unset;
+  //   } 
+  // }
 }
 .vertical-timeline::before {
 	background: var(--body-color);

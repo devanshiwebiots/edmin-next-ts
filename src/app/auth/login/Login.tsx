@@ -1,27 +1,33 @@
-import { CreateAccount, DoNotAccount, EmailAddress, ForgotPassword, Href, ImagePath, Password, RememberPassword, SignIn, SignInAccount, SignInWith } from "@/Constant";
-import Cookies from "js-cookie";
+import { CreateAccount, DoNotAccount, EmailAddress, ForgotPassword, Href, Password, RememberPassword, SignIn, SignInAccount, SignInWith } from "@/Constant";
+import { signIn } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-toastify";
 import { Button, Form, FormGroup, Input, Label } from "reactstrap";
-import SocialApp from "./SocialApp";
 import imageOne from "../../../../public/assets/images/logo/logo.png";
+import SocialApp from "./SocialApp";
 
 const Login = () => {
   const [show, setShow] = useState(false);
-  const [email, setEmail] = useState("test123@gmail.com");
+  const [email, setEmail] = useState("Test123@gmail.com");
   const [password, setPassword] = useState("Test@123");
   const router = useRouter();
-
-  const SimpleLoginHandle = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (email === "test123@gmail.com" && password === "Test@123") {
-      Cookies.set("edmin_login", JSON.stringify(true));
-      router.push(`/dashboard/default`);
-      window.location.reload();
-    } else {
-      toast.error("Please Enter valid email or password...!");
+ 
+  const formSubmitHandle = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();                                                                                  
+    const result = await signIn("credentials", {
+      email,   
+      password,  
+      redirect: false,
+      callbackUrl: "/dashboard/ecommerce",
+    });
+  
+    if (result?.ok) {
+      toast.success("successfully Logged in Rediract......")
+      router.push("/dashboard/ecommerce");
+    } else {     
+      toast.error("Invalid Credentaial...");
     }
   };
   return (
@@ -32,7 +38,7 @@ const Login = () => {
         </Link>
       </div>
       <div className="login-main">
-        <Form className="theme-form" onSubmit={(e) => SimpleLoginHandle(e)}>
+        <Form className="theme-form" onSubmit={(e) => formSubmitHandle(e)}>
           <h2 className="text-center">{SignInAccount}</h2>
           <p className="text-center">{"Enter your email & password to login"}</p>
           <FormGroup>

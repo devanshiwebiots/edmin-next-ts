@@ -160,7 +160,7 @@ export const MenuList: MenuItem[] = [
           { path: `/bonusui/dropzone`, title: "Dropzone", type: "link" },
           { path: `/bonusui/tour`, title: "Tour", type: "link" },
           { path: `/bonusui/sweetalert2`, title: "SweetAlert2", type: "link" },
-          { path: `/bonusui/carousel`, title: "Carousel", type: "link" },
+          { path: `/bonusui/reactstrapcarousel`, title: "Reactstrap Carousel", type: "link" },
           { path: `/bonusui/rangeslider`, title: "Range Slider", type: "link" },
           { path: `/bonusui/imagecropper`, title: "Image Cropper", type: "link" },
           { path: `/bonusui/basiccards`, title: "Basic Card", type: "link" },
