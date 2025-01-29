@@ -119,6 +119,32 @@ html[dir="rtl"] {
   .float-sm-end {
     float: left !important;
   }
+  .cd-timeline-content {
+    .cd-date {
+      right: 122%;
+      left: unset;
+    }
+  }
+  .cd-timeline-block {
+    &:nth-child(even) {
+      .cd-timeline-content {
+        float: left;
+        border-left: unset;
+        border-right: unset;
+        .cd-date {
+          right: auto;
+          left: 122%;
+          text-align: left;
+        }
+        &::before {
+          right: auto;
+          left: 100%;
+          border: 15px solid transparent;
+          border-left: 15px solid $light-color;
+        } 
+      }
+    }
+  }
   //  inner page
   .basic-wizard {
     .stepper-horizontal {
