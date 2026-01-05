@@ -13,7 +13,7 @@ const EditMyProfile = () => {
             <Row className="mb-2">
               <div className="profile-title">
                 <div className="d-flex">
-                  <Image width={70} height={70} className="img-70 rounded-circle" alt="edit-user" src={`${ImagePath}/avatar/1.jpg`} />
+                  <Image width={70} height={70} className="img-70 rounded-circle" alt="edit-user" src={`${ImagePath}/avatar/1.jpg`} unoptimized/>
                   <div className="flex-grow-1">
                     <h4 className="mb-1">{'MARK JECNO'}</h4>
                     <p>{'DESIGNER'}</p>

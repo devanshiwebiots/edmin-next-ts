@@ -10,7 +10,7 @@ const CustomImagesWithRadio = () => {
         <div className="img-checkbox">
           <Input className="main-img-cover" id="img-radio-1" type="radio" name="radio6"/>
           <Label check for='img-radio-1' className="mb-0">
-            <Image width={346} height={220}  src={`${ImagePath}/switch/5.jpg`} alt="coffee-beans" />
+            <Image width={346} height={220}  src={`${ImagePath}/switch/5.jpg`} alt="coffee-beans" unoptimized/>
           </Label>
         </div>
       </div>

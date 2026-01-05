@@ -10,7 +10,7 @@ const CustomImagesWithCheckbox = () => {
         <div className="img-checkbox">
           <Input className="main-img-cover" id="img-check-1" type="checkbox" />
           <Label check for='img-check-1' className=" mb-0">
-            <Image width={346} height={220} src={`${ImagePath}/switch/1.jpg`} alt="coffee-beans" />
+            <Image width={346} height={220} src={`${ImagePath}/switch/1.jpg`} alt="coffee-beans" unoptimized/>
           </Label>
         </div>
       </div>

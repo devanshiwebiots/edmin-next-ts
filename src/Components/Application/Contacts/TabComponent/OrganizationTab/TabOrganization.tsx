@@ -1,6 +1,6 @@
 import { organizationList } from '@/Data/Application/Contacts/Contacts'
 import { NavLink, TabPane } from 'reactstrap'
-import { Delete, Edit, EmailAddress, Gender, General, History, Href, ImagePath, Name, Personal, Print } from '@/Constant'
+import { Delete, Edit, EmailAddress, Gender, General, History, Href, ImagePath, Name, Print } from '@/Constant'
 import { useState } from 'react'
 import PrintModalPreview from './PrintModalPreview'
 import { OrganizationTabType } from '@/Type/Application/Contacts/Contacts'
@@ -19,7 +19,7 @@ const TabOrganization = () => {
         <TabPane tabId={item.activeTab} key={i}>
           <div className="profile-mail">
             <div className="d-flex">
-              <Image width={100} height={100} className='img-100 img-fluid m-r-20 rounded-circle update_img_5' src= {`${ImagePath}/${item.avatar}`} alt= 'images'  />
+              <Image width={100} height={100} className='img-100 img-fluid m-r-20 rounded-circle update_img_5' src= {`${ImagePath}/${item.avatar}`} alt= 'images'  unoptimized/>
               <div className="flex-grow-1 mt-0">
                 <h5>
                   <span className="first_name_5">{item.name}</span>

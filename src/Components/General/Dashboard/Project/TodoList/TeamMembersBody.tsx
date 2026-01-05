@@ -12,7 +12,7 @@ const TeamMembersBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" />
+                <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

@@ -17,7 +17,7 @@ const PricingPlans = () => {
         <h5>{FREE}</h5>
         <p>{'100GB Space'}</p>
         <Button size="xs" color="primary" outline>{Selected}</Button>
-        <Image width={128} height={128} className="bg-img" src={`${ImagePath}/file-manager/folder.png`} alt="dashboard"/>
+        <Image width={128} height={128} className="bg-img" src={`${ImagePath}/file-manager/folder.png`} alt="dashboard" unoptimized/>
       </div>
     </ul>
   )

@@ -11,9 +11,9 @@ const ToggleParentModal:React.FC<ToggleModalType> = ({ nestedModal, closeAll, to
     return (
       <div className="modal-toggle-wrapper">
         <ul className="modal-img ">
-          <li><Image width={100} height={100} src={`${ImagePath}/gif/instagram.gif`} alt="instagram" /></li>
-          <li><Image width={100} height={100} src={`${ImagePath}/gif/whatapp.gif`} alt="whatsapp" /></li>
-          <li><Image width={100} height={100} src={`${ImagePath}/gif/facebook.gif`} alt="facebook" /></li>
+          <li><Image width={100} height={100} src={`${ImagePath}/gif/instagram.gif`} alt="instagram" unoptimized/></li>
+          <li><Image width={100} height={100} src={`${ImagePath}/gif/whatapp.gif`} alt="whatsapp" unoptimized/></li>
+          <li><Image width={100} height={100} src={`${ImagePath}/gif/facebook.gif`} alt="facebook" unoptimized/></li>
         </ul>
         <h6>{ParentToggleTitle}</h6>
         <Button color="dark" className="rounded-pill w-100 mt-4" onClick={toggleNested}>{ConnectNewAccount}</Button>

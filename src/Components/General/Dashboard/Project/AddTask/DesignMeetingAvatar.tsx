@@ -23,7 +23,7 @@ const DesignMeetingAvatar = () => {
                 <ul>
                   {data.avatar.map((item, i) => (
                     <li className="d-inline-block p-0" key={i}>
-                      <Image width={38} height={38} className="img-38 b-r-8" src={`${ImagePath}/user/${item}`} alt="#" />
+                      <Image width={38} height={38} className="img-38 b-r-8" src={`${ImagePath}/user/${item}`} alt="#" unoptimized/>
                     </li>
                   ))}
                   <li className="d-inline-block p-0">

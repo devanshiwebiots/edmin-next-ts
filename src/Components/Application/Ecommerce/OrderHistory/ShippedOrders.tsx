@@ -23,7 +23,7 @@ const ShippedOrders = () => {
             <Col xxl="4" md="6" key={index}>
               <div className="prooduct-details-box">
               <div className="d-flex gap-3">
-                  <Image width={60} height={60} className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} />
+                  <Image width={60} height={60} className="align-self-center img-fluid img-60" src={`${ImagePath}/ecommerce/${item.image}`} alt={item.name} unoptimized/>
                   <div className="flex-grow-1">
                     <div className="product-name">
                       <h6><Link href={Href}>{item.name}</Link></h6>

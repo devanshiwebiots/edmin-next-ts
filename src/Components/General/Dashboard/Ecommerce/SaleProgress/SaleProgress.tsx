@@ -15,7 +15,7 @@ const SaleProgress = () => {
             {saleProgressData.map((item, i) => (
               <li className={`d-flex gap-3 bg-light-${item.color}`} key={i}>
                 <div className={`flex-shrink-0 border-${item.color}`}>
-                  <Image width={22} height={22} src={`${ImagePath}/dashboard2/product/${item.image}`} alt="product" />
+                  <Image width={22} height={22} src={`${ImagePath}/dashboard2/product/${item.image}`} alt="product" unoptimized/>
                 </div>
                 <div className="flex-grow-1">
                   <h5>{item.title}</h5>

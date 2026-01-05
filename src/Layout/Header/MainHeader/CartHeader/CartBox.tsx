@@ -28,7 +28,7 @@ const CartBox = () => {
       {defaultData.map((item, i) => (
         <li className={`cartbox d-flex bg-light-${item.color}`} key={i}>
           <div className={`flex-shrink-0 border-${item.color}`}>
-            <Image width={22} height={22} src={`${ImagePath}/dashboard2/product/${item.image}`} alt="avatar" />
+            <Image width={22} height={22} src={`${ImagePath}/dashboard2/product/${item.image}`} alt="avatar" unoptimized/>
           </div>
           <div className="touchpin-details">
             <Link href={`/ecommerce/cart`}>

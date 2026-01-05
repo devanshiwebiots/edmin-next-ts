@@ -8,7 +8,7 @@ const GroupImages = () => {
       <ul>
         {GroupChatHeader.map((data, i) => (
           <li key={i}>
-            <Image width={32} height={32} className="img-fluid rounded-circle" src={`${ImagePath}/${data}`} alt="user" />
+            <Image width={32} height={32} className="img-fluid rounded-circle" src={`${ImagePath}/${data}`} alt="user" unoptimized/>
           </li>
         ))}
         <li>

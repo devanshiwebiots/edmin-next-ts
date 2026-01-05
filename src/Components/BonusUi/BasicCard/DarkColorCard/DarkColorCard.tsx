@@ -13,7 +13,7 @@ const DarkColorCard = () => {
         <CardBody className="bg-dark">
           <div className="d-flex align-items-center gap-3 pills-blogger">
             <div className="blog-wrapper">
-              <Image width={100} height={100} className="blog-img img-100" src={`${ImagePath}/dashboard2/product/headphones.png`} alt="head-phone" />
+              <Image width={100} height={100} className="blog-img img-100" src={`${ImagePath}/dashboard2/product/headphones.png`} alt="head-phone" unoptimized/>
             </div>
             <div className="blog-content">
               <p><em className="font-danger fw-bold">{SmartHeadphones}</em>{DarkColorText1}</p>

@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const ChatUserProfile = () => {
   const { members, selectedUser, currentUser, chats } = useAppSelector((state) => state.chat);
-  var activeChat = 0;
+  let activeChat = 0;
   if (selectedUser != null) activeChat = selectedUser.id;
   const dispatch = useAppDispatch();
   const changeChatClick = (selectUser: number) => {
@@ -30,7 +30,7 @@ const ChatUserProfile = () => {
               <li className={`common-space ${activeChat === item.id ? "active" : ""}`} key={id} onClick={() => changeChatClick(item.id)}>
                 <div className="chat-time">
                   <div className="active-profile">
-                    <Image width={42} height={42} className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" />
+                    <Image width={42} height={42} className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" unoptimized/>
                     <div className={`status bg-${item.online}`} />
                   </div>
                   <div>

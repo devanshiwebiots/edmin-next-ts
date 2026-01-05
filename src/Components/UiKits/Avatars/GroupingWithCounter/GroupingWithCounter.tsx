@@ -16,11 +16,11 @@ const GroupingWithCounter = () => {
               <div className="customers d-inline-block avatar-group">
                 <ul>
                   <li className="d-inline-block">
-                    <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/4.jpg`} alt="#" />
+                    <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/4.jpg`} alt="#" unoptimized/>
                   </li>
                   {groupingWithCounterData.map((item, i) => (
                     <li className="d-inline-block" key={i}>
-                      <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${item}.jpg`} alt="#" />
+                      <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${item}.jpg`} alt="#" unoptimized/>
                     </li>
                   ))}
                   <li className="d-inline-block">

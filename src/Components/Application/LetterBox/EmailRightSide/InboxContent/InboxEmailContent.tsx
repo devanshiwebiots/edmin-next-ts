@@ -22,7 +22,7 @@ const InboxEmailContent :React.FC<CommonDataType> = ({data,index}) => {
           </div>
           <SvgIcon className={`feather important-mail ${data.star ? "active" : ""}`} iconId="star" onClick={() => dispatch(addToFavorites(data))} />
           <div className="rounded-border">
-            {data.image && <Image width={37} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" className='img-fluid' />}
+            {data.image && <Image width={37} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" className='img-fluid' unoptimized/>}
             {data.shortName && <div className={data.color === "success" ? "circle-success" : ""}>
               <p className={`txt-${data.color}`}>{data.shortName}</p>
             </div>}

@@ -12,7 +12,7 @@ const CoursesHighlightedBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image width={63} height={40} src={`${ImagePath}/dashboard1/invest/${item.image}`}alt="avatar"/>
+                <Image width={63} height={40} src={`${ImagePath}/dashboard1/invest/${item.image}`}alt="avatar" unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

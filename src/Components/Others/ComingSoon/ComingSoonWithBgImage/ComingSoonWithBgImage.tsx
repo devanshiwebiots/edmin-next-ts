@@ -9,7 +9,7 @@ const ComingSoonWithBgImageContainer = () => {
       <Container fluid className="p-0 m-0">
         <div className="comingsoon comingsoon-bgimg">
           <div className="comingsoon-inner text-center">
-            <Image width={80} height={71} src={`${ImagePath}/logo/logo-login.png`} alt="comingsoon" />
+            <Image width={80} height={71} src={`${ImagePath}/logo/logo-login.png`} alt="comingsoon" unoptimized/>
             {/* <Image width={80} height={71} className="for-dark" src={`${ImagePath}/logo/dark-login-logo.png`} alt="comingsoon" /> */}
             <h5>{WeAreComingSoon}</h5>
             <div className="countdown" id="clockdiv">

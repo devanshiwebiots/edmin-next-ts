@@ -13,11 +13,11 @@ const SizesCart = () => {
           <div className="avatar-showcase">
             <div className="avatars">
               <div className="avatar">
-                <Image width={100} height={100} priority className="img-100 rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="image" />
+                <Image width={100} height={100} priority className="img-100 rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="image" unoptimized/>
               </div>
               {sizeImages.map((item, index) => (
                 <div className="avatar" key={index}>
-                  <Image width={100} height={100} priority className={`${item.className} rounded-circle`} src={`${ImagePath}/avatar/${item.src}`} alt="image" />
+                  <Image width={100} height={100} priority className={`${item.className} rounded-circle`} src={`${ImagePath}/avatar/${item.src}`} alt="image" unoptimized/>
                 </div>
               ))}
             </div>

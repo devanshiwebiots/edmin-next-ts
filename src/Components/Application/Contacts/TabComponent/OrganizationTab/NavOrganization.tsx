@@ -18,7 +18,7 @@ const NavOrganization:React.FC<NavOrgPropType> = ({ callback }) => {
           <NavItem id="myTab" key={item.id}>
             <NavLink href={Href} className={organizationTab === item.activeTab ? "active" : ""} onClick={() => handleTabs(item.activeTab)}>
               <div className="d-flex">
-                <Image width={50} height={50} className="p-0 img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/${item.avatar}`} alt="Image" />
+                <Image width={50} height={50} className="p-0 img-50 img-fluid m-r-20 rounded-circle" src={`${ImagePath}/${item.avatar}`} alt="Image" unoptimized/>
                 <div className="flex-grow-1">
                   <h6>{item.name}</h6>
                   <p>{item.email}</p>

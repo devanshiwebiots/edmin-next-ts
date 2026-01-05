@@ -9,8 +9,8 @@ const InvoiceHeader = () => {
         <tbody>
           <tr>
             <td>
-              <Image width={106} height={37} className="for-light" src={`${ImagePath}/logo/logo.png`} alt="logo" />
-              <Image width={106} height={37}  className="for-dark" src={`${ImagePath}/logo/dark-logo.png`} alt="logo"/>
+              <Image width={106} height={37} className="for-light" src={`${ImagePath}/logo/logo.png`} alt="logo" unoptimized/>
+              <Image width={106} height={37}  className="for-dark" src={`${ImagePath}/logo/dark-logo.png`} alt="logo" unoptimized/>
               <span style={{ opacity: "0.8", display: "block", marginTop: 10 }} >
                 202-555-0258
               </span>

@@ -14,7 +14,7 @@ const ModalOne = () => {
         <div className="edmin-demo-img">
           <CommonEdminModalTitle heading="Modal 1 -" subHeading="Profile Modal" text="Example of Edmin dashboard profile card." />
           <div className="overflow-hidden">
-            <Image width={491} height={268} className="image-fluid" src={`${ImagePath}/alert/social.png`} alt="social" />
+            <Image width={491} height={268} className="image-fluid" src={`${ImagePath}/alert/social.png`} alt="social" unoptimized/>
             <Button color="primary" className="mx-auto mt-3" onClick={modalOneToggle}>{ClickOut}</Button>
           </div>
           <ProfileModal modalOne={modalOne} modalOneToggle={modalOneToggle} />

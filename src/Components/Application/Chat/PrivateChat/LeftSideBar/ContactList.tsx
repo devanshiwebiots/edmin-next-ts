@@ -15,7 +15,7 @@ export const ContactList = () => {
               <ul className="border-0" key={i}>
                 <li className="common-space">
                   <div className="chat-time">
-                    {item.image && <Image width={42} height={42} className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" />}
+                    {item.image && <Image width={42} height={42} className="img-fluid rounded-circle" src={`${ImagePath}/${item.image}`} alt="user" unoptimized/>}
                     {item.imageUser && (
                       <div className={`custom-name bg-light-${item.color}`}>
                         <p className={`txt-${item.color} f-w-500`}>{item.imageUser}</p>

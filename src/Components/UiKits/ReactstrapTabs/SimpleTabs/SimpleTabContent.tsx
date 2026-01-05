@@ -12,7 +12,7 @@ const SimpleTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
       <TabPane tabId="2">
         <div className="pt-3 mb-0">
           <div className="flex-space flex-wrap align-items-center">
-            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/1.jpg`} alt="profile" />
+            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/>
             <ul className="d-flex flex-column gap-1 ">
               <li> <strong>Visit Us:</strong> 2600 Hollywood Blvd,Florida, United States-33020</li>
               <li> <strong>Mail Us:</strong> contact@us@gmail.com</li>
@@ -23,7 +23,7 @@ const SimpleTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
       </TabPane>
       <TabPane tabId="3">
         <ul className="pt-3 d-flex flex-column gap-1 ">
-          <li className="mb-1">Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.</li>
+          <li className="mb-1">Us Technology offers web &amp; mobile development solutions for all industry verticals.{"Include a short form using fields that'll help your business understand who's contacting them."}</li>
           <li> <strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States-	33020</li>
           <li> <strong>Mail Us:</strong> contact@us@gmail.com</li>
           <li> <strong>Contact Number: </strong> (954) 357-7760</li>

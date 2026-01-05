@@ -21,7 +21,7 @@ const ProductSidebar = () => {
                   <Category />
                   <PriceRange />
                   <div className="product-filter text-center">
-                    <Image width={329} height={497} className="img-fluid banner-product w-100" src={`${ImagePath}/ecommerce/banner.jpg`} alt="product"/>
+                    <Image width={329} height={497} className="img-fluid banner-product w-100" src={`${ImagePath}/ecommerce/banner.jpg`} alt="product" unoptimized/>
                   </div>
                 </CardBody>
               </div>

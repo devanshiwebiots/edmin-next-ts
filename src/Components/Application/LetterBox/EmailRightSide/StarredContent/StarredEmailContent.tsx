@@ -19,7 +19,7 @@ const StarredEmailContent:React.FC<CommonDataType> = ({data,index}) => {
           </div>
           <SvgIcon className={`feather important-mail ${data.star ? "active" : ""}`} iconId="star" onClick={() => dispatch(removeFromFavorite(data))} />
           <div className="rounded-border">
-            {data.image && <Image width={38} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" />}
+            {data.image && <Image width={38} height={38} src={`${ImagePath}/user/${data.image}`} alt="user" unoptimized/>}
               {data.shortName && <div className={data.color === "success" ? "circle-success" : ""}>
                 <p className={`txt-${data.color}`}>{data.shortName}</p>
             </div>}

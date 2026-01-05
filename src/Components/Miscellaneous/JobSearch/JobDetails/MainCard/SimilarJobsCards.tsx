@@ -22,7 +22,7 @@ const SimilarJobsCards:React.FC<SimilarJobsCardsType> = ({limit,jobClass,ribbon,
               <div className="job-search">
                 <CardBody>
                   <div className="d-flex">
-                    <Image width={40} height={42} className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="logo"/>
+                    <Image width={40} height={42} className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="logo" unoptimized/>
                     <div className="flex-grow-1">
                       <h6>
                         <Link href={Href}>{item.job_name}</Link>

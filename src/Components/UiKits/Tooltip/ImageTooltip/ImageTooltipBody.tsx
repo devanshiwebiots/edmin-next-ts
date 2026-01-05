@@ -9,7 +9,7 @@ const ImageTooltipBody:React.FC<ImageTooltipBodyType> = ({ item, i }) => {
   const toggle = () => setTooltip(!tooltip);
   return (
     <li key={i}>
-      <Image width={35} height={35} src={`${ImagePath}/social/${item.image}`} alt="social" id={item.id} />
+      <Image width={35} height={35} src={`${ImagePath}/social/${item.image}`} alt="social" id={item.id} unoptimized/>
       <UncontrolledTooltip target={item.id} trigger="click" placement="top" isOpen={tooltip} toggle={toggle}>
         {item.title}
       </UncontrolledTooltip>

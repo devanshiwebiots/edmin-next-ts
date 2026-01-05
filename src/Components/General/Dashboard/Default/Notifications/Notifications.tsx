@@ -14,7 +14,7 @@ const Notifications = () => {
           {notificationsData.map((item, i) => (
             <div className={`d-flex ${item.class} gap-3`} key={i}>
               <div className="flex-shrink-0">
-                {item.image && <Image width={40} height={40} className="img-40 b-r-15" src={`${ImagePath}/avatar/${item.image}`} alt="Use1" />}
+                {item.image && <Image width={40} height={40} className="img-40 b-r-15" src={`${ImagePath}/avatar/${item.image}`} alt="Use1" unoptimized/>}
                 {item.name && <span className={`bg-${item.color}`}>{item.name}</span>}
               </div>
               <div className="flex-grow-1">

@@ -16,7 +16,7 @@ const ModalTwo = () => {
           <p>Scan the QR code using an authenticator app and website such as abc authenticator, OTP xyz, or pqr authenticator. You must input the six-digit code it generates below.</p>
           <div className="modal-img">
             <div className="qr-img">
-              <Image width={100} height={100} src={`${ImagePath}/forms/qr-code.png`} alt="qr-code"/>
+              <Image width={100} height={100} src={`${ImagePath}/forms/qr-code.png`} alt="qr-code" unoptimized/>
             </div>
             <div className="qr-content">
               <div className={`alert alert-light-dark light alert-dismissible fade text-dark border-left-wrapper ${ active ? "show" : "d-none"}`} role="alert">

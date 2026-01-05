@@ -6,13 +6,13 @@ const DynamicGroupingWithCounter = () => {
     <div className="customers d-inline-block avatar-group">
       <ul>
         <li className="d-inline-block">
-          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/4.jpg`} alt="#" />
+          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/4.jpg`} alt="#" unoptimized/>
         </li>
         <li className="d-inline-block">
-          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/5.jpg`} alt="#" />
+          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/5.jpg`} alt="#" unoptimized/>
         </li>
         <li className="d-inline-block">
-          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/8.jpg`} alt="#" />
+          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/8.jpg`} alt="#" unoptimized/>
         </li>
         <li className="d-inline-block">
           <span className="b-r-30">+2</span>

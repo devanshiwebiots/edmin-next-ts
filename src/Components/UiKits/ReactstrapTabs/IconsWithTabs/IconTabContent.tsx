@@ -13,7 +13,7 @@ const IconTabContent:React.FC<TabContentProp> = ({basicTab}) => {
       <TabPane tabId="2">
         <div className="pt-3 mb-0">
           <div className="flex-space flex-wrap align-items-center">
-            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/2.jpg`} alt="profile"/>
+            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/2.jpg`} alt="profile" unoptimized/>
             <ul className="d-flex flex-column gap-1 ">
               <li><strong>Visit Us:  </strong> 278 Green Avenue Oakland, CA 94612</li>
               <li><strong>Mail Us:</strong> MichaelMMcGowan@teleworm.us</li>
@@ -24,7 +24,7 @@ const IconTabContent:React.FC<TabContentProp> = ({basicTab}) => {
       </TabPane>
       <TabPane tabId="3">
         <div>
-          <p className="pt-3 mb-2">Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them. </p>
+          <p className="pt-3 mb-2">Us Technology offers web &amp; {"mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them."} </p>
           <Label check for="exampleFormControlone">{EmailAddress}</Label>
           <Input id="exampleFormControlone" type="email" placeholder="youremail@gmail.com" />
         </div>

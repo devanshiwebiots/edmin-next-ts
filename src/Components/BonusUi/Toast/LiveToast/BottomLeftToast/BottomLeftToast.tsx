@@ -17,7 +17,7 @@ const BottomLeftToast = () => {
       <div className="toast-container position-fixed start-0 bottom-0 p-3 toast-index toast-rtl">
         <Toast fade isOpen={open}>
           <div className="toast-img toast-header">
-            <Image width={40} height={40} className="rounded me-2" src={`${ImagePath}/avatar/9.jpg`} alt="profile" />
+            <Image width={40} height={40} className="rounded me-2" src={`${ImagePath}/avatar/9.jpg`} alt="profile" unoptimized/>
             <strong className="me-auto">Edmin theme</strong>
             <Button close onClick={() => setOpen(false)}></Button>
           </div>

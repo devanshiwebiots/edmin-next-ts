@@ -13,11 +13,11 @@ const ShapeCart = () => {
           <div className="avatar-showcase">
             <div className="avatars">
               <div className="avatar">
-                <Image width={100} height={100} className="img-100 b-r-8" src={`${ImagePath}/avatar/4.jpg`} alt="image" />
+                <Image width={100} height={100} className="img-100 b-r-8" src={`${ImagePath}/avatar/4.jpg`} alt="image" unoptimized/>
               </div>
               {shape.map(({ className, src }, index) => (
                 <div className="avatar" key={index}>
-                  <Image width={100} height={100} className={`${className} b-r-30`} src={`${ImagePath}/avatar/${src}`} alt="image" />
+                  <Image width={100} height={100} className={`${className} b-r-30`} src={`${ImagePath}/avatar/${src}`} alt="image" unoptimized/>
                 </div>
               ))}
             </div>

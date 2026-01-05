@@ -13,7 +13,7 @@ const WishlistData = () => {
           <div className="prooduct-details-box">
             <div className="d-block">
               <Link href={`/ecommerce/productpage`}>
-                <Image width={237} height={258} className="align-self-center img-fluid" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" />
+                <Image width={237} height={258} className="align-self-center img-fluid" src={`${ImagePath}/ecommerce/${item.image}`} alt="#" unoptimized/>
               </Link>
               <div className="flex-grow-1">
                 <div className="product-name">

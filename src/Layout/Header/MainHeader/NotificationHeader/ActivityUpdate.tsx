@@ -18,7 +18,7 @@ const ActivityUpdate = () => {
             <h6>{item.userName}</h6>
           </div>
           <div className="flex-shrink-0">
-            <Image className="b-r-15 img-40" height={40} width={40} src={`${ImagePath}/avatar/${item.image}`} alt="avatar" />
+            <Image className="b-r-15 img-40" height={40} width={40} src={`${ImagePath}/avatar/${item.image}`} alt="avatar" unoptimized/>
           </div>
         </li>
       ))}

@@ -21,7 +21,7 @@ const UserProfileFifthStyle = () => {
             <Col lg="12" xl="4">
               <div id="aniimated-thumbnials-3">
                 <Link href={Href}>
-                  <Image width={493} height={277} className="img-fluid rounded" src={`${ImagePath}/other-images/sidebar-bg.jpg`} alt="nature" />
+                  <Image width={493} height={277} className="img-fluid rounded" src={`${ImagePath}/other-images/sidebar-bg.jpg`} alt="nature" unoptimized/>
                 </Link>
               </div>
             </Col>

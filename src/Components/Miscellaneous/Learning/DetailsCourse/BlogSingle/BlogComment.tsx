@@ -6,7 +6,7 @@ import { ImagePath } from "@/Constant";
 const BlogComment: React.FC<CommentsType> = ({ data }) => {
   return (
     <div className="d-flex align-self-center">
-      <Image width={74} height={74} className="align-self-center" src={`${ImagePath}/${data.src}`} alt="Generic-placeholder" />
+      <Image width={74} height={74} className="align-self-center" src={`${ImagePath}/${data.src}`} alt="Generic-placeholder" unoptimized/>
       <div className="flex-grow-1">
         <Row>
           <Col md="4" className="xl-100">

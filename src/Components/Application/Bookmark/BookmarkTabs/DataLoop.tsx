@@ -54,7 +54,7 @@ const DataLoop = () => {
           <Col xxl="3" md="4" sm="6" key={index} className="col-ed-4">
             <Card className="card-with-border bookmark-card o-hidden">
               <div className="details-website">
-                <Image width={264} height={264} className="img-fluid" src={`${ImagePath}/${data.image}`} alt="image" />
+                <Image width={264} height={264} className="img-fluid" src={`${ImagePath}/${data.image}`} alt="image" unoptimized/>
                 <div className={`favourite-icon favourite_0 ${data.fillStar ? "favourite" : ""}`} onClick={() => addToFavorites(data)}>
                   <a href={Href}><i className="fa fa-star"></i></a>
                 </div>

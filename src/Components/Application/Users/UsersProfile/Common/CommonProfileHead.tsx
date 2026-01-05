@@ -8,7 +8,7 @@ const CommonProfileHead:React.FC<UserPropsType> = ({ activeTime ,image}) => {
     <Row>
       <Col sm="8">
         <div className="d-flex">
-          <Image width={50} height={50} className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/${image === "1" ? "user" : "avatar" }/${image}.jpg`} alt="GenericPlaceholder" />
+          <Image width={50} height={50} className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/${image === "1" ? "user" : "avatar" }/${image}.jpg`} alt="GenericPlaceholder" unoptimized/>
           <div className="flex-grow-1 align-self-center">
             <h5 className="mt-0 user-name">{'JOHAN DIO'}</h5>
           </div>

@@ -151,7 +151,7 @@ const ProductListTableProductName: React.FC<ProductListTableProduct> = ({ images
   return (
     <>
       <Link href={`/ecommerce/productpage`}>
-        <Image width={64} height={64} className="img-fluid" src={`${ImagePath}/${images}`} alt="shirt" />
+        <Image width={64} height={64} className="img-fluid" src={`${ImagePath}/${images}`} alt="shirt" unoptimized/>
       </Link>
     </>
   );

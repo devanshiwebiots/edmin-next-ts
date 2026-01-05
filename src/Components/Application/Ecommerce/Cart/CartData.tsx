@@ -28,7 +28,7 @@ const CartData = () => {
                 {cart.map((item, index) => (
                   <tr key={index}>
                     <td>
-                      <Image width={40} height={40} className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt="product" />
+                      <Image width={40} height={40} className="img-fluid img-40" src={`${ImagePath}/ecommerce/${item.image}`} alt="product" unoptimized/>
                     </td>
                     <td>
                       <div className="product-name">

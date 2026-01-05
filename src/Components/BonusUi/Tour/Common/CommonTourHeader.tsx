@@ -8,7 +8,7 @@ const CommonTourHeader:React.FC<CommonTourHeaderProp> = ({ date, time }) => {
   return (
     <Col sm="8">
       <div className="d-flex">
-        <Image width={40} height={40} className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/avatar/5.jpg`} alt="Generic placeholder" />
+        <Image width={40} height={40} className="img-thumbnail rounded-circle me-3" src={`${ImagePath}/avatar/5.jpg`} alt="Generic placeholder" unoptimized/>
         <div className="flex-grow-1 align-self-center">
           <h5 className="mt-0 user-name">{WilliamJennings}</h5>
           <div className="tour-wrapper">

@@ -5,7 +5,7 @@ const HeaderProfile = () => {
   return (
     <div className="d-flex">
       <div className="media-size-email">
-        <Image width={38} height={38} className="me-3 rounded-circle" src={`${ImagePath}/user/4.jpg`} alt="Image" />
+        <Image width={38} height={38} className="me-3 rounded-circle" src={`${ImagePath}/user/4.jpg`} alt="Image" unoptimized/>
       </div>
       <div className="flex-grow-1">
         <h6>{"MARK JENCO"}</h6>

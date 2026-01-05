@@ -11,9 +11,9 @@ const ImagesSizesCart = () => {
         <CardHeaderCommon title={ImagesSizes} span={imageData} headClass="pb-0" />
         <CardBody>
           <div className="gradient-border gap-3">
-            <Image width={30} height={30} className="img-30 img-h-30" src={`${ImagePath}/avatar/5.jpg`} alt="img-size" />
+            <Image width={30} height={30} className="img-30 img-h-30" src={`${ImagePath}/avatar/5.jpg`} alt="img-size" unoptimized/>
             {imagesDetails.map((item, index) => (
-              <Image width={item} height={item} className={`img-${item} img-h-${item}`} src={`${ImagePath}/avatar/5.jpg`} alt={`img-size${item}`} key={index} />
+              <Image width={item} height={item} className={`img-${item} img-h-${item}`} src={`${ImagePath}/avatar/5.jpg`} alt={`img-size${item}`} key={index} unoptimized/>
             ))}
           </div>
         </CardBody>

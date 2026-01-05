@@ -18,7 +18,7 @@ const ScheduleTimeTabContent: React.FC<ScheduleTimeTabContentPropsType> = ({ tab
                   <h6>{data.comment}</h6>
                 </div>
                 <div className="flex-shrink-0">
-                  <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" />
+                  <Image width={40} height={40} className="img-40 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" unoptimized/>
                 </div>
               </li>
             ))}

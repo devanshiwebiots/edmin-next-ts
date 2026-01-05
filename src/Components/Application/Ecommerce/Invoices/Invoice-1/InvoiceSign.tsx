@@ -5,7 +5,7 @@ const InvoiceSign = () => {
   return (
     <tr style={{ marginTop: 12 }}>
       <td>
-        <Image width={154} height={49} src={`${ImagePath}/email-template/invoice-1/sign.png`} alt="sign" />
+        <Image width={154} height={49} src={`${ImagePath}/email-template/invoice-1/sign.png`} alt="sign" unoptimized/>
         <span
           style={{
             display: "block",

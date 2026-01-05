@@ -48,7 +48,7 @@ const ContactDetailsClass:React.FC<ContactDetailsPropsType> = ({ selectedUser, u
       {selectedUser ?
         <div className="profile-mail">
           <div className="d-flex">
-            <Image width={100} height={100} className= 'img-100 img-fluid m-r-20 rounded-circle update_img_0' src= {`${ImagePath}/${selectedUser.avatar}`} alt= 'users'  />
+            <Image width={100} height={100} className= 'img-100 img-fluid m-r-20 rounded-circle update_img_0' src= {`${ImagePath}/${selectedUser.avatar}`} alt= 'users'  unoptimized/>
             <div className="flex-grow-1 mt-0">
               <h6>
                 <span className="first_name_0">{selectedUser.name}</span>

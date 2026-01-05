@@ -12,15 +12,15 @@ const BorderPrimaryState = () => {
         <CardBody>
           <ListGroup>
             <ListGroupItem className="list-group-item-action active" href={Href}>
-              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="user" />
+              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="user" unoptimized/>
               {TeresaMosteller}
             </ListGroupItem>
             <ListGroupItem className="list-group-item-action" href={Href}>
-              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/3.jpg`} alt="user" />
+              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/3.jpg`} alt="user" unoptimized/>
               {GloriaAcheson}
             </ListGroupItem>
             <ListGroupItem className="list-group-item-action  " href={Href}>
-              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/5.jpg`} alt="user" />
+              <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/5.jpg`} alt="user" unoptimized/>
               {BryanOwens}
             </ListGroupItem>
           </ListGroup>

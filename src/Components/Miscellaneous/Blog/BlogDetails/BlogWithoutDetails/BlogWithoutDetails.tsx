@@ -11,7 +11,7 @@ const BlogWithoutDetails = () => {
         <Col md="6" xxl="3" className="box-col-6" key={index}>
           <Card>
             <div className="blog-box blog-grid text-center">
-              <Image width={376} height={235} className="img-fluid top-radius-blog" src={`${ImagePath}/blog/${data}`} alt="blog" />
+              <Image width={376} height={235} className="img-fluid top-radius-blog" src={`${ImagePath}/blog/${data}`} alt="blog" unoptimized/>
               <ListOfBlogWithoutDetails />
             </div>
           </Card>

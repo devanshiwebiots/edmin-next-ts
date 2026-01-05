@@ -1,20 +1,41 @@
 import SvgIcon from "@/CommonComponent/SVG/SvgIcon";
-import { useState } from "react";
-import { Dropdown, DropdownMenu, DropdownToggle } from "reactstrap";
+import { useState, useRef, useEffect } from "react";
 
 const ChatDropMenu = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-  const toggle = () => setDropdownOpen((prevState) => !prevState);
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  // close on outside click
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, []);
 
   return (
-    <div className="dropdown-form">
-    <Dropdown isOpen={dropdownOpen} toggle={toggle} direction="up">
-      <DropdownToggle color="transparent" className="dropdown-toggle dropdown-form p-0 border-0 bg-transparent"><i className="icon-plus" /></DropdownToggle>
-      <DropdownMenu className="chat-icon">
-        <div className="mb-2 dropdown-item"><SvgIcon className="feather"  iconId="camera" /></div>
-        <div className="dropdown-item"><SvgIcon className="feather"  iconId="paperclip" /></div>
-      </DropdownMenu>
-    </Dropdown>
+    <div className="dropdown-form position-relative" ref={ref}>
+      <button
+        type="button"
+        className="dropdown-toggle dropdown-form p-0 border-0 bg-transparent"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <i className="icon-plus" />
+      </button>
+
+      {open && (
+        <div className="dropdown-menu chat-icon show">
+          <div className="mb-2 dropdown-item">
+            <SvgIcon className="feather" iconId="camera" />
+          </div>
+          <div className="dropdown-item">
+            <SvgIcon className="feather" iconId="paperclip" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

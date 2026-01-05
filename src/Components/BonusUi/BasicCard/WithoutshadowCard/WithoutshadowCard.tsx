@@ -11,7 +11,7 @@ const WithoutShadowCard = () => {
         <CardHeaderCommon title={WithoutShadowCards} span={withoutShadowCardDetails} headClass="pb-0" />
         <CardBody>
           <div className="flex-space flex-wrap align-items-center">
-            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/2.jpg`} alt="profile" />
+            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/2.jpg`} alt="profile" unoptimized/>
             <p>
               <strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States- 33020
               <br />

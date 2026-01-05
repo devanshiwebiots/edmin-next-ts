@@ -15,7 +15,7 @@ const PayPalOption:React.FC<PaymentMethodOptionPropsType> = ({paymentMethodName,
           <p>You will be taken to the paypal website to finish your transaction safely</p>
         </div>
         <div>
-          <Image width={145} height={50}  src={`${ImagePath}/checkout/paypal.png`} alt="paypal"/>
+          <Image width={145} height={50}  src={`${ImagePath}/checkout/paypal.png`} alt="paypal" unoptimized/>
         </div>
       </div>
     </Col>

@@ -11,7 +11,7 @@ const DynamicCustomContentList = () => {
         <ListGroupItem className="list-group-item-action list-hover-primary" key={index}>
           <div className="d-flex w-100 justify-content-between align-items-center">
             <div className="list-wrapper">
-              <Image width={136} height={86} className="list-img" src={`${ImagePath}/${src}`} alt="profile" />
+              <Image width={136} height={86} className="list-img" src={`${ImagePath}/${src}`} alt="profile" unoptimized/>
               <div className="list-content">
                 <h5>{title}</h5>
                 <p>{mail}</p>

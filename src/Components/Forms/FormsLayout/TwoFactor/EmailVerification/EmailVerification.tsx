@@ -15,7 +15,7 @@ const EmailVerification = () => {
                 <Row className="g-1">
                   <Col xxl="4" className="box-col-5">
                     <div className="authenticate">
-                      <Image width={200} height={200} className="img-fluid" src={`${ImagePath}/forms/email.png`} alt="image"/>
+                      <Image width={200} height={200} className="img-fluid" src={`${ImagePath}/forms/email.png`} alt="image" unoptimized/>
                     </div>
                   </Col>
                   <EmailVerificationContent/>

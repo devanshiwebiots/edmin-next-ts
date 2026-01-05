@@ -8,17 +8,17 @@ const JavaScriptBehaviorTabContent: React.FC<TabContentProps> = ({ basicTab }) =
       <TabContent activeTab={basicTab}>
         <TabPane tabId="1">
           <div className="d-flex mb-xl-4 list-behavior-1">
-            <div className="flex-shrink-0"><Image width={100} height={100} className="tab-img img-fluid" src={`${ImagePath}/blog/img.png`} alt="home" /></div>
+            <div className="flex-shrink-0"><Image width={100} height={100} className="tab-img img-fluid" src={`${ImagePath}/blog/img.png`} alt="home" unoptimized/></div>
             <div className="flex-grow-1"><p className="mb-xl-0 mb-sm-4"> We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration, Search Engine Optimization and other Internet Marketing, Renewal of Services timely and effectively.</p></div>
           </div>
           <div className="d-xl-flex list-behavior-2">
-            <div className="flex-grow-1"><p className="mb-0"> When someone visits your homepage, your design should inspire them to stay. Therefore, your value proposition should be established on the homepage for visitors to select to stay on your website.Building trust, expressing value, and guiding visitors to the next step all depend on a page's design.</p></div>
-            <div className="flex-shrink-0"><Image width={100} height={100} className="tab-img img-fluid" src={`${ImagePath}/blog/img.png`} alt="home" /></div>
+            <div className="flex-grow-1"><p className="mb-0">{" When someone visits your homepage, your design should inspire them to stay. Therefore, your value proposition should be established on the homepage for visitors to select to stay on your website.Building trust, expressing value, and guiding visitors to the next step all depend on a page's design."}</p></div>
+            <div className="flex-shrink-0"><Image width={100} height={100} className="tab-img img-fluid" src={`${ImagePath}/blog/img.png`} alt="home" unoptimized/></div>
           </div>
         </TabPane>
         <TabPane tabId="2" className="dark-list">
           <div className="flex-space align-items-center list-light-dark contact-profile">
-            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/5.jpg`} alt="profile" />
+            <Image width={100} height={100} className="tab-img" src={`${ImagePath}/avatar/5.jpg`} alt="profile" unoptimized/>
             <ul className="d-flex flex-column gap-2">
               <li><strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States- 33020</li>
               <li><strong>Mail Us:</strong>contact@us@gmail.com</li>
@@ -28,7 +28,7 @@ const JavaScriptBehaviorTabContent: React.FC<TabContentProps> = ({ basicTab }) =
         </TabPane>
         <TabPane tabId="3">
           <ul className="d-flex flex-column gap-1 ">
-            <li> Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them.</li>
+            <li> {"Us Technology offers web &amp; mobile development solutions for all industry verticals.Include a short form using fields that'll help your business understand who's contacting them."}</li>
             <li><strong>Visit Us: </strong> 2600 Hollywood Blvd,Florida, United States- 33020</li>
             <li><strong>Mail Us:</strong>contact@us@gmail.com</li>
             <li><strong>Contact Number: </strong>(954) 357-7760</li>

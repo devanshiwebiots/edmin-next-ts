@@ -18,7 +18,7 @@ const TaskSummaryRight = () => {
           <ul>
             {taskSummaryRightData.map((item, i) => (
               <li className="d-inline-block p-0" key={i}>
-                <Image width={40} height={40} className="img-40 b-r-8" src={`${ImagePath}/user/${item}.jpg`} alt="#" />
+                <Image width={40} height={40} className="img-40 b-r-8" src={`${ImagePath}/user/${item}.jpg`} alt="#" unoptimized/>
               </li>
             ))}
             <li className="d-inline-block p-0">

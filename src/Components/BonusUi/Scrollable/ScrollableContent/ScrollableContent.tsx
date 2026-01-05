@@ -16,7 +16,7 @@ const ScrollableContent = () => {
             <ListGroup className="main-lists-content">
               <ListGroupItem active className="list-group-item-action list-hover-primary" href={Href}>
                 <div className="list-wrapper gap-0">
-                  <Image width={55} height={55}  className="list-img" src={`${ImagePath}/avatar/1.jpg`} alt="profile" />
+                  <Image width={55} height={55}  className="list-img" src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/>
                   <div className="list-content">
                     <h6>Molly Boake</h6>
                     <p>MollyBoake@rhyta.com</p><small>5 days ago</small>

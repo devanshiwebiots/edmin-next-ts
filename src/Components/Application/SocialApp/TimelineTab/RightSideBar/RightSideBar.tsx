@@ -17,7 +17,7 @@ const RightSideBar = () => {
       <FriendsCard />
       <Col xl="12" className="xl-50 box-col-6">
         <Card>
-          <Image width={376} height={251} className="img-fluid" src={`${ImagePath}/social-app/timeline-4.png`} alt="timeline"/>
+          <Image width={376} height={251} className="img-fluid" src={`${ImagePath}/social-app/timeline-4.png`} alt="timeline" unoptimized/>
         </Card>
       </Col>
     </>

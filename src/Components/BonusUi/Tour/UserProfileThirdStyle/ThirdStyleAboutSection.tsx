@@ -12,7 +12,7 @@ const ThirdStyleAboutSection = () => {
         <Col sm="6">
           <Link href={Href}>
             <div className="tour-blog">
-              <Image width={756} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" />
+              <Image width={756} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" unoptimized/>
             </div>
           </Link>
         </Col>
@@ -20,7 +20,7 @@ const ThirdStyleAboutSection = () => {
           <Link href={Href}>
             <div className="tour-blog">
               <Image width={756} height={350}
-               className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" />
+               className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" unoptimized/>
             </div>
           </Link>
         </Col>

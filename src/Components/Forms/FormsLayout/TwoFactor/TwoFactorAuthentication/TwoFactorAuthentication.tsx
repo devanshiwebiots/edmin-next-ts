@@ -14,7 +14,7 @@ const TwoFactorAuthentication = () => {
           <div className="authentication-wrapper">
             <h4>{TwoFactorAuthenticationHeading}</h4>
             <p>Click on the authentication button below and scan the QR code</p>
-            <Image width={481} height={420} src={`${ImagePath}/forms/qr-scan.png`} alt="qr-scan"/>
+            <Image width={481} height={420} src={`${ImagePath}/forms/qr-scan.png`} alt="qr-scan" unoptimized/>
           </div> 
           <Button color="primary" className="mt-5" onClick={()=>dispatch(setModalOne())}>{FactorAuthentication}</Button>
           <ModalOne />

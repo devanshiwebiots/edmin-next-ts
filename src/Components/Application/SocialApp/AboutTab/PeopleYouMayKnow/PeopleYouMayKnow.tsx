@@ -17,7 +17,7 @@ const PeopleYouMayKnow:React.FC<AboutPropsType> = ({Heading}) => {
               {peopleYouMayKnowData.map((data, index) => (
                 <li key={index}>
                   <div className="add-friend text-center">
-                    <Image width={60} height={60} className="img-60 img-fluid rounded-circle" alt="user" src={`${ImagePath}/${data.peopleImageName}`}/>
+                    <Image width={60} height={60} className="img-60 img-fluid rounded-circle" alt="user" src={`${ImagePath}/${data.peopleImageName}`} unoptimized/>
                     <span className="d-block">{data.peopleName}</span>
                     <Button color="primary" size="xs">{AddFriend}</Button>
                   </div>

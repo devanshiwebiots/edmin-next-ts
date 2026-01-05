@@ -14,7 +14,7 @@ const ModalThird = () => {
         <div className="Edmin-demo-img">
           <CommonEdminModalTitle heading="Modal 3 -" subHeading="Balance Modal" text="Example of Edmin dashboard balance card." />
           <div className="overflow-hidden balance-modal">
-            <Image width={491} height={297} src={`${ImagePath}/alert/balance.png`} alt="learning" />
+            <Image width={491} height={297} src={`${ImagePath}/alert/balance.png`} alt="learning" unoptimized/>
             <Button color="primary" className="mx-auto mt-3" onClick={modalThirdToggle}>{ClickOut}</Button>
           </div>
           <BalanceModal modalThird={modalThird} modalThirdToggle={modalThirdToggle} />

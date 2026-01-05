@@ -16,13 +16,13 @@ const HorizontalScrollbar = () => {
               <Row>
                 <Col sm="2">
                   <div className="horizontal-img">
-                    <Image width={240} height={360}  className="img-fluid" src={`${ImagePath}/scrollbar/fashion1.jpg`} alt="girl" />
+                    <Image width={240} height={360}  className="img-fluid" src={`${ImagePath}/scrollbar/fashion1.jpg`} alt="girl" unoptimized/>
                   </div>
                 </Col>
                 {horizontalScrollDataList.map((src, index) => (
                   <Col sm="2" key={index}>
                     <div className="horizontal-img">
-                      <Image width={240} height={360} className="img-fluid" src={`${ImagePath}/${src}`} alt="girl" />
+                      <Image width={240} height={360} className="img-fluid" src={`${ImagePath}/${src}`} alt="girl" unoptimized/>
                     </div>
                   </Col>
                 ))}

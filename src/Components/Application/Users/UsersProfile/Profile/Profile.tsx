@@ -10,7 +10,7 @@ const Profile = () => {
         <div className="cardheader" />
         <div className="user-image">
           <div className="avatar">
-            <Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile"/>
+            <Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/>
           </div>
           <div className="icon-wrapper">
             <i className="icofont icofont-pencil-alt-5"/>

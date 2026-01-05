@@ -362,7 +362,7 @@ const SkillsData: React.FC<SkillsDataProp> = ({ value, skillColor }) => {
 const ImageData: React.FC<ImageDataProp> = ({ image, title }) => {
   return (
     <div className="d-flex">
-      <Image width={30} height={30} className="rounded-circle img-30 me-3" src={`${ImagePath}/${image}`} alt="Generic placeholder image" />
+      <Image width={30} height={30} className="rounded-circle img-30 me-3" src={`${ImagePath}/${image}`} alt="Generic placeholder image" unoptimized/>
       <div className="flex-grow-1 align-self-center">
         <div>{title}</div>
       </div>

@@ -1,6 +1,6 @@
 import { Cancel, Print, PrintViews } from "@/Constant";
 import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
-import ReactToPrint, { useReactToPrint } from "react-to-print";
+import  { useReactToPrint } from "react-to-print";
 import PrintPreview from "../PersonalTab/PrintPreview";
 import { useRef } from "react";
 import { PrintModalPreviewPropsType } from "@/Type/Application/Contacts/Contacts";

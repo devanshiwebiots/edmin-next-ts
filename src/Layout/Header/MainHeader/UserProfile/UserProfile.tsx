@@ -11,7 +11,7 @@ const UserProfile = () => {
   return (
     <li className='profile-dropdown custom-dropdown'>
       <div className='d-flex align-items-center' onClick={() => setShow(!show)}>
-        <Image width={45} height={49} src={session?.user?.image || `${ImagePath}/profile.png`} alt='avatar' />
+        <Image width={45} height={49} src={session?.user?.image || `${ImagePath}/profile.png`} alt='avatar' unoptimized/>
         <div className='flex-grow-1'>
           <h5>{session?.user?.email}</h5>
           <span>{session?.user?.name || 'UI Designer'}</span>

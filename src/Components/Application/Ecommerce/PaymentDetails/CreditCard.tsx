@@ -23,7 +23,7 @@ const CreditCard = () => {
               </Form>
             </Col>
             <Col md="5" className="text-center card-order">
-              <Image width={352} height={235} className="img-fluid" src={`${ImagePath}/ecommerce/card.png`} alt="ecommerce" />
+              <Image width={352} height={235} className="img-fluid" src={`${ImagePath}/ecommerce/card.png`} alt="ecommerce" unoptimized/>
             </Col>
           </Row>
         </CardBody>

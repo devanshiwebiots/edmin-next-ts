@@ -13,7 +13,7 @@ const UserProfile:React.FC<PropsType> = ({ callback }) => {
           <div className="cardheader socialheader" />
           <div className="user-image">
             <div className="avatar">
-              <Image width={90} height={90} alt="user" src={`${ImagePath}/avatar/1.jpg`} />
+              <Image width={90} height={90} alt="user" src={`${ImagePath}/avatar/1.jpg`} unoptimized/>
             </div>
             <div className="icon-wrapper">
               <i className="icofont icofont-pencil-alt-5" />

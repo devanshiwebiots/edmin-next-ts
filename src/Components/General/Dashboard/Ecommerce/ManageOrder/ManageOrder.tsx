@@ -18,7 +18,7 @@ const ManageOrder = () => {
                   <td>
                     <div className="d-flex gap-2 align-items-center">
                       <div className="flex-shrink-0">
-                        <Image width={42} height={42} className="img-fluid img-42 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" />
+                        <Image width={42} height={42} className="img-fluid img-42 b-r-10" src={`${ImagePath}/avatar/${data.image}`} alt="avatar" unoptimized/>
                       </div>
                       <div className="flex-grow-1">
                         <Link href={Href}>

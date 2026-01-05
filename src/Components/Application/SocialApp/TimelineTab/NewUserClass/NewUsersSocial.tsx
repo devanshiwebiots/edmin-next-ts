@@ -7,7 +7,7 @@ const NewUsersSocial:React.FC<TimelineDataType> = ({data}) => {
   return (
     <div className="new-users-social">
       <div className='d-flex'>
-        <Image width={60} height={60} className="rounded-circle image-radius m-r-15" src={`${ImagePath}/avatar/4.jpg`} alt="user121"/>
+        <Image width={60} height={60} className="rounded-circle image-radius m-r-15" src={`${ImagePath}/avatar/4.jpg`} alt="user121" unoptimized/>
         <div className='flex-grow-1'>
           <h6 className="mb-0 f-w-600">{data.name}</h6>
           <p>{data.date}</p>

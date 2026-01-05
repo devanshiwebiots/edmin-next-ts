@@ -22,7 +22,7 @@ const CardsClass = () => {
                 <div className="job-search">
                   <CardBody>
                     <div className="d-flex">
-                      <Image width={40} height={42} className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job"/>
+                      <Image width={40} height={42} className="img-40 b-r-0 img-fluid m-r-20" src={`${ImagePath}/${item.logo}`} alt="job" unoptimized/>
                       <div className="flex-grow-1">
                         <h6 className="f-w-600">
                           <Link href={Href} className='font-primary'>{item.job_name}</Link>

@@ -13,10 +13,10 @@ const DescriptionMyGallery = () => {
           <Item original={`${ImagePath}/${item}`}  caption="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy." width="402" height="576">
             {({ ref, open }) => (
               <a href={Href} onClick={open}>
-                <Image width={348} height={348} ref={ref} src={`${ImagePath}/${item}`} alt="thumbnail" />
+                <Image width={348} height={348} ref={ref} src={`${ImagePath}/${item}`} alt="thumbnail" unoptimized/>
                 <div className="caption border-top-0 p-2">
                   <h4>{MyPortfolioTitle}</h4>
-                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+                  <p>{"is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy."}</p>
                 </div>
               </a>
             )}

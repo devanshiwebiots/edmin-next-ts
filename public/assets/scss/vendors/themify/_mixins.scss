@@ -19,7 +19,7 @@ text-transform: none;
 line-height: 1;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-  *margin-right: .3em; // fixes ie7 issues
+ margin-right: .3em;
 }
 
 @mixin border-radius($radius) {

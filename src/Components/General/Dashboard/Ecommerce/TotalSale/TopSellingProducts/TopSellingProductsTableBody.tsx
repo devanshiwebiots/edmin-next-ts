@@ -15,7 +15,7 @@ const TopSellingProductsTableBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image width={30} height={30} className="img-30 b-r-10" src={`${ImagePath}/dashboard2/order/${item.image}`} alt="watch" />
+                <Image width={30} height={30} className="img-30 b-r-10" src={`${ImagePath}/dashboard2/order/${item.image}`} alt="watch" unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

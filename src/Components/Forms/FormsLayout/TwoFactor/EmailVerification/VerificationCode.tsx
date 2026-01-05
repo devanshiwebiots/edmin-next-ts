@@ -22,7 +22,7 @@ const VerificationCode = () => {
       <div className="card-wrapper border rounded-3 h-100">
         <div className="authenticate">
           <h4>{VerificationCodeHeading}</h4>
-          <Image width={197} height={200} className="img-fluid" src={`${ImagePath}/forms/authenticate.png`} alt="authenticate" />
+          <Image width={197} height={200} className="img-fluid" src={`${ImagePath}/forms/authenticate.png`} alt="authenticate" unoptimized/>
           <span>{OtpCodeSent}</span>
           <span>+91********70</span>
           <Form  onSubmit={(event) => event.preventDefault()}>

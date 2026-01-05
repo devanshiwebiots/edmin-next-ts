@@ -14,7 +14,7 @@ const SecondStyleAboutSection = () => {
       <div className="img-container">
         <div id="aniimated-thumbnials">
           <Link href={Href}>
-            <Image width={1528} height={441} className="img-fluid rounded" src={`${ImagePath}/other-images/profile-style-img3.png`} alt="gallery" />
+            <Image width={1528} height={441} className="img-fluid rounded" src={`${ImagePath}/other-images/profile-style-img3.png`} alt="gallery" unoptimized/>
           </Link>
           <p className="block-ellipsis pt-3">
             {PainterTourSpan}

@@ -7,7 +7,7 @@ const KnowledgebaseHelp = () => {
   return (
     <Col xs="12" className="position-relative">
       <div className="knowledgebase-bg">
-        <Image width={1600} height={500} className="bg-img-cover bg-center" src={`${ImagePath}/knowledgebase/bg_1.jpg`} alt="looginpage" />
+        <Image width={1600} height={500} className="bg-img-cover bg-center" src={`${ImagePath}/knowledgebase/bg_1.jpg`} alt="looginpage" unoptimized/>
       </div>
       <div className="knowledgebase-search">
         <div>

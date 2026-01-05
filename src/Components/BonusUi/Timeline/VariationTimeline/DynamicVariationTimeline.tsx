@@ -24,7 +24,7 @@ const DynamicVariationTimeline = () => {
                   {data.image.map((item, index) => (
                     <li key={index}>
                       <div className="recent-img-wrap">
-                        <Image width={50} height={50} src={`${ImagePath}/${item}`} className="img-fluid" alt="chair" />
+                        <Image width={50} height={50} src={`${ImagePath}/${item}`} className="img-fluid" alt="chair" unoptimized/>
                       </div>
                     </li>
                   ))}

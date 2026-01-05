@@ -12,7 +12,7 @@ const LatestPhotosCollapse:React.FC<FilterPropsType> = ({ isFilter }) => {
           {numbers.map((data, index) => (
             <li key={index}>
               <div className="latest-post">
-                <Image width={70} height={70} className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`} />
+                <Image width={70} height={70} className="img-fluid" alt="user" src={`${ImagePath}/social-app/post-${data}.png`}  unoptimized/>
               </div>
             </li>
           ))}

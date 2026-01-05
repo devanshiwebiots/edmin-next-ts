@@ -12,7 +12,7 @@ const ProjectCommon:React.FC<CommonProjectInterFace> = ({ item }) => {
         <Badge color={`${item.badge === 'Done' ? 'success' : 'danger'}`}>{item.badge}</Badge>
         <h5 className='f-w-500 mb-2'>{item.title}</h5>
         <div className='d-flex mb-2'>
-          <Image width={20} height={20} className='img-20 me-1 rounded-circle' src={`${ImagePath}/user/${item.image}`} alt='images' />
+          <Image width={20} height={20} className='img-20 me-1 rounded-circle' src={`${ImagePath}/user/${item.image}`} alt='images' unoptimized/>
           <p className="font-light">{item.sites}</p>
         </div>
         <p>{item.description}</p>

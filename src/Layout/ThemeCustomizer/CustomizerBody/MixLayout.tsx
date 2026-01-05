@@ -18,7 +18,7 @@ const MixLayout = () => {
       <div className="color-body d-flex align-items-center justify-space-between">
         {mixLayoutData.map((data, i) => (
           <div className={`color-img ${data.class}`} key={i}>
-            <Image width={86} height={65} className="img-fluid" src={`${ImagePath}/customizer/${data.image}`} alt="customizer" />
+            <Image width={86} height={65} className="img-fluid" src={`${ImagePath}/customizer/${data.image}`} alt="customizer" unoptimized/>
             <div className="customizer-overlay" />
             <div className={`button color-btn ${data.color}-setting`}>
               <a href={Href} onClick={() => handleDarkLayout(data.layout)}>

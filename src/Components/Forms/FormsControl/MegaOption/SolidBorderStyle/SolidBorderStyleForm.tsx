@@ -17,7 +17,7 @@ const SolidBorderStyleForm = () => {
                     <Media body>
                       <span className="d-flex list-behavior-1">
                         <span className="flex-shrink-0 ms-2">
-                          <Image width={134} height={86} className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="home" />
+                          <Image width={134} height={86} className="tab-img b-r-0 img-fluid" src={`${ImagePath}/${image}`} alt="home" unoptimized/>
                         </span>
                         <span className="flex-grow-1">
                           <span className="mb-0">{spanText}</span>

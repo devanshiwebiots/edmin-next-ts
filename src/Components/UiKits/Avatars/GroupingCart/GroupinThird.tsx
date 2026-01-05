@@ -7,11 +7,11 @@ const GroupInThird = () => {
     <div className="customers d-inline-block avatar-group">
       <ul>
         <li className="d-inline-block">
-          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/4.jpg`} alt="image" />
+          <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/avatar/4.jpg`} alt="image" unoptimized/>
         </li>
         {groupingImageThird.map((item, index) => (
           <li className="d-inline-block" key={index}>
-            <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/${item}`} alt="image" />
+            <Image width={40} height={40} className="img-40 b-r-30" src={`${ImagePath}/${item}`} alt="image" unoptimized/>
           </li>
         ))}
       </ul>

@@ -5,7 +5,7 @@ const InvoiceFiveSign = () => {
   return (
     <tr style={{marginTop:36}} >
       <td>
-        <Image width={154} height={49} src={`${ImagePath}/email-template/invoice-3/sign.png`} alt="sign" />
+        <Image width={154} height={49} src={`${ImagePath}/email-template/invoice-3/sign.png`} alt="sign" unoptimized/>
         <span style={{ color: "#43B9B2", display: "block", fontSize: 18, fontWeight: 600 }} >
           Laurine T. Ebbert
         </span>

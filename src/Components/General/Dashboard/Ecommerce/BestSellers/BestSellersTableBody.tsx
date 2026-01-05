@@ -12,7 +12,7 @@ const BestSellersTableBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image width={38} height={38} className="b-r-10" src={`${ImagePath}/${item.image}`} alt="avatar" />
+                <Image width={38} height={38} className="b-r-10" src={`${ImagePath}/${item.image}`} alt="avatar" unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <Link href={Href}>

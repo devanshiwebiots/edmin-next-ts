@@ -14,7 +14,7 @@ const UniqueToast = () => {
           <CardBody className="toast-rtl">
             <Toast fade isOpen={open}>
               <div className="toast-img toast-header">
-                <Image width={30} height={30} className="rounded me-2" src={`${ImagePath}/avatar/1.jpg`} alt="profile" />
+                <Image width={30} height={30} className="rounded me-2" src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/>
                 <strong className="me-auto">Edmin theme</strong>
                 <Button close className="p-0" onClick={() => setOpen(false)}></Button>
               </div>

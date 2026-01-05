@@ -9,7 +9,7 @@ const InvoiceTwoData = () => {
       <tr className="invoice-dark" style={{ backgroundColor: "rgba(67, 185, 178, 0.1)", boxShadow: "0px 1px 0px 0px rgba(82, 82, 108, 0.15)" }} key={i}>
         <td style={{ padding: "18px 15px", display: "flex", alignItems: "left", gap: 10 }} >
           <span style={{ width: 54, height: 51, backgroundColor: "rgba(67, 185, 178 , 0.1)", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: 5 }} >
-            <Image width={22} height={29} src={`${ImagePath}/email-template/${data.image}.png`} alt="laptop" style={{ height: 29 }} />
+            <Image width={22} height={29} src={`${ImagePath}/email-template/${data.image}.png`} alt="laptop" style={{ height: 29 }} unoptimized/>
           </span>
           <ul style={{ padding: 0, margin: 0, listStyle: "none" }}>
             <li>

@@ -15,7 +15,7 @@ const AllInvoicesTableBody = () => {
           <td>
             <div className="d-flex align-items-center gap-2">
               <div className="flex-shrink-0">
-                <Image width={40} height={42} className="b-r-10 img-40" src={`${ImagePath}/avatar/${item.image}`} alt="avatar" />
+                <Image width={40} height={42} className="b-r-10 img-40" src={`${ImagePath}/avatar/${item.image}`} alt="avatar" unoptimized/>
               </div>
               <div className="flex-grow-1">
                 <NavLink to={Href}>

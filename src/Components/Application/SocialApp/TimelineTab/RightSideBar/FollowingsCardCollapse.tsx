@@ -11,7 +11,7 @@ const FollowingsCardCollapse:React.FC<FilterPropsType> = ({ isFilter }) => {
       <CardBody className="social-list filter-cards-view">
         {followingsData.map((data, index) => (
           <div className='d-flex' key={index}>
-            <Image width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="image" src={`${ImagePath}/avatar/${data.imageName}`} />
+            <Image width={50} height={50} className="img-50 img-fluid m-r-20 rounded-circle" alt="image" src={`${ImagePath}/avatar/${data.imageName}`} unoptimized/>
             <div className='flex-grow-1'>
               <span className="d-block">{data.name}</span>
               <Link href={Href}>{AddFriend}</Link>

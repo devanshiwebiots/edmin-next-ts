@@ -11,8 +11,8 @@ const ProductOfferBody = () => {
         <Swiper pagination={{ dynamicBullets: true}} modules={[Pagination]} className="mySwiper" autoplay >
           <SwiperSlide >
             <div className="item text-center">
-              <Image width={150} height={210} className="img-fluid" src={`${ImagePath}/dashboard2/headphone.png`} alt="headphone"/>
-              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" />
+              <Image width={150} height={210} className="img-fluid" src={`${ImagePath}/dashboard2/headphone.png`} alt="headphone" unoptimized/>
+              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" unoptimized/>
               <div className="product-content">
                 <h4><Link className="f-18" href={Href}>Wireless Apple Airpods</Link></h4>
                 <h5 className="font-primary f-w-600 f-16 mt-1">$130.00</h5>
@@ -21,8 +21,8 @@ const ProductOfferBody = () => {
           </SwiperSlide>
           <SwiperSlide >
             <div className="item text-center">
-              <Image width={127} height={213} className="img-fluid" src={`${ImagePath}/dashboard2/9.png`} alt="headphone" />
-              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" />
+              <Image width={127} height={213} className="img-fluid" src={`${ImagePath}/dashboard2/9.png`} alt="headphone" unoptimized/>
+              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" unoptimized/>
               <div className="product-content">
                 <h4><Link className="f-18" href={Href}> Wireless Apple Airpods </Link></h4>
                 <h5 className="font-primary f-w-600 f-16 mt-1">$130.00</h5>
@@ -31,8 +31,8 @@ const ProductOfferBody = () => {
           </SwiperSlide>
           <SwiperSlide >
             <div className="item text-center">
-              <Image width={116} height={213} className="img-fluid" src={`${ImagePath}/dashboard2/7.png`} alt="headphone" />
-              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" />
+              <Image width={116} height={213} className="img-fluid" src={`${ImagePath}/dashboard2/7.png`} alt="headphone" unoptimized/>
+              <Image width={58} height={58} className="product-gif img-fluid" src={`${ImagePath}/gif/new.gif`} alt="gif" unoptimized/>
               <div className="product-content">
                 <h4><Link className="f-18" href={Href}> Wireless Apple Airpods</Link></h4>
                 <h5 className="font-primary f-w-600 f-16 mt-1">$130.00</h5>

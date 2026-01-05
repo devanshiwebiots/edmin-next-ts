@@ -19,7 +19,7 @@ const TotalClients = () => {
                   <ul>
                     {totalClientsData.map((item, i) => (
                       <li className="d-inline-block p-0" key={i}>
-                        <Image width={52} height={53} className="img-52 b-r-8" src={`${ImagePath}/user/${item}`} alt="#" />
+                        <Image width={52} height={53} className="img-52 b-r-8" src={`${ImagePath}/user/${item}`} alt="#" unoptimized/>
                       </li>
                     ))}
                     <li className="d-inline-block p-0">

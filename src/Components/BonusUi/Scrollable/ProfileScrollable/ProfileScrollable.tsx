@@ -14,12 +14,12 @@ const ProfileScrollable = () => {
           <ScrollBar className="scroll-demo scroll-b-none" style={{ width: "100%", height: "300px" }}>
             <ListGroup>
               <ListGroupItem className="list-group-item-action list-hover-primary">
-                <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="user" />
+                <Image width={40} height={40} className="rounded-circle" src={`${ImagePath}/avatar/1.jpg`} alt="user" unoptimized/>
                 Gloria D. Acheson
               </ListGroupItem>
               {profileScrollList.map(({ text, src }, index) => (
                 <ListGroupItem className="list-group-item-action list-hover-primary" key={index}>
-                  <Image width={40} height={40}  className="rounded-circle" src={`${ImagePath}/${src}`}alt="user" />
+                  <Image width={40} height={40}  className="rounded-circle" src={`${ImagePath}/${src}`}alt="user" unoptimized/>
                   {text}
                 </ListGroupItem>
               ))}

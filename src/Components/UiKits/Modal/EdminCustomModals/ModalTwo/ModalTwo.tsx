@@ -15,7 +15,7 @@ const ModalTwo = () => {
         <div className="Edmin-demo-img">
           <CommonEdminModalTitle heading="Modal 2 -" subHeading="Result Modal" text="Example of Edmin login form." />
           <div className="overflow-hidden">
-            <Image width={488} height={312} className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" />
+            <Image width={488} height={312} className="image-fluid" src={`${ImagePath}/alert/learning.png`} alt="learning" unoptimized/>
             <Button color="primary" className="mx-auto mt-3" onClick={modalTwoToggle}>{ClickOut}</Button>
           </div>
           <CommonModal centered modalBodyClassName="social-profile text-start" isOpen={modalTwo} toggle={modalTwoToggle}>

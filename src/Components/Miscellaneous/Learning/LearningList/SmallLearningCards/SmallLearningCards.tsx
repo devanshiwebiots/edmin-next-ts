@@ -12,7 +12,7 @@ const SmallLearningCards = () => {
           <Card>
             <div className="blog-box blog-grid text-center product-box">
               <div className="product-img">
-                <Image width={376} height={282} className="img-fluid top-radius-blog" src={`${ImagePath}/faq/${data.src}.jpg`} alt="faq" />
+                <Image width={376} height={282} className="img-fluid top-radius-blog" src={`${ImagePath}/faq/${data.src}.jpg`} alt="faq" unoptimized/>
                 <div className="product-hover">
                   <ul>
                     <li><i className="icon-link" /></li>

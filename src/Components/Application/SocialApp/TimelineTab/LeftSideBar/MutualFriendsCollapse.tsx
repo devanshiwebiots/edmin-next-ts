@@ -10,7 +10,7 @@ const MutualFriendsCollapse:React.FC<FilterPropsType> = ({ isFilter }) => {
       <CardBody className="social-status filter-cards-view">
         {mutualFriendData.map((data, index) => (
           <div className='d-flex align-items-center' key={index}>
-            <Image width={50} height={50} className="img-50 rounded-circle m-r-15" src={`${ImagePath}/avatar/${data.imageName}`} alt="user" />
+            <Image width={50} height={50} className="img-50 rounded-circle m-r-15" src={`${ImagePath}/avatar/${data.imageName}`} alt="user" unoptimized/>
             <div className={`social-status ${data.socialClass}`} />
             <div className='flex-grow-1'>
               <span className="f-w-600 d-block">{data.title}</span>

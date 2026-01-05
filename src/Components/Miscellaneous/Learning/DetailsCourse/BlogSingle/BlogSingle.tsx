@@ -10,7 +10,7 @@ const BlogSingle = () => {
       <CardBody>
         <div className="blog-single">
           <div className="blog-box blog-details">
-            <Image width={1148} height={718} className="img-fluid w-100" src={`${ImagePath}/faq/learning-1.png`} alt="blog-main" />
+            <Image width={1148} height={718} className="img-fluid w-100" src={`${ImagePath}/faq/learning-1.png`} alt="blog-main" unoptimized/>
             <BlogDetails />
           </div>
           <section className="comment-box">

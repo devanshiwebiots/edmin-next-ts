@@ -13,7 +13,7 @@ const MainCard = () => {
         <div className="job-search">
           <CardBody>
             <div className="d-flex align-items-center">
-              <Image width={40} height={42} className="img-40 img-fluid m-r-20" src={`${ImagePath}/job-search/1.jpg`} alt="job-search"/>
+              <Image width={40} height={42} className="img-40 img-fluid m-r-20" src={`${ImagePath}/job-search/1.jpg`} alt="job-search" unoptimized/>
               <div className="flex-grow-1">
                 <h6 className="f-w-600">
                   <Link href={Href} className="font-primary">{ProductDesignerMainCard}</Link>

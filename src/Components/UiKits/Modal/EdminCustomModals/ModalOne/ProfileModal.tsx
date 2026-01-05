@@ -16,7 +16,7 @@ const ProfileModal:React.FC<ProfileModalType> = ({ modalOne, modalOneToggle }) =
               <CardBody>
                 <div className="social-img-wrap">
                   <div className="social-img">
-                    <Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile" />
+                    <Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/>
                   </div>
                   <div className="edit-icon">
                     <SvgIcon className='feather stroke-primary' iconId="check-circle" />

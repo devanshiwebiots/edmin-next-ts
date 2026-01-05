@@ -31,7 +31,7 @@ const SideBarList:React.FC<PropsType> = ({ level } ) => {
         </div>
       </li>
       <li>
-        <Image width={399} height={300} src={`${ImagePath}/login/icon.png`} alt="loginpage" className='img-fluid w-100'/>
+        <Image width={399} height={300} src={`${ImagePath}/login/icon.png`} alt="loginpage" className='img-fluid w-100' unoptimized/>
       </li>
     </ul>
   )

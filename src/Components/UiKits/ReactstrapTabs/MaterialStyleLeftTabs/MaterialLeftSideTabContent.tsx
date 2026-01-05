@@ -12,7 +12,7 @@ const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }) => {
         <TabPane tabId="1"><p>This product is meant for educational purposes only. Any resemblance to real persons, living or dead is purely coincidental. Void where prohibited. Some assembly required. List each check separately by bank number. Batteries not included.Google Web Designer gives you the power to create beautiful and compelling videos, images and HTML5 ads. Use animation and interactive elements to build out your creative vision, then scale your content for different sizes or audiences with responsive and dynamic workflows.</p></TabPane>
         <TabPane tabId="2"><p className="mb-0"></p>
          <div className="flex-space flex-wrap align-items-center">
-          <Image width={100} height={100} className="tab-img b-r-10" src={`${ImagePath}/avatar/9.jpg`} alt="profile"/>
+          <Image width={100} height={100} className="tab-img b-r-10" src={`${ImagePath}/avatar/9.jpg`} alt="profile" unoptimized/>
            <ul className="d-flex flex-column gap-1 ">
              <li><strong> Name: </strong> Jully Catlin</li>
              <li><strong>Visit Us: </strong> 50006 Ehrenberg/Parker,Arkansas-85334</li>
@@ -25,7 +25,7 @@ const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }) => {
           <CardBody className="p-0">
             <div className="main-inbox"> 
               <div className="header-inbox justify-content-start gap-2">
-                <div className="header-left-inbox"><div className="inbox-img"><Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile" /></div></div>
+                <div className="header-left-inbox"><div className="inbox-img"><Image width={100} height={100} src={`${ImagePath}/avatar/1.jpg`} alt="profile" unoptimized/></div></div>
                 <div className="inbox-content"> 
                   <h6>{DalbultCaslin}</h6>
                   <p className="text-muted">stroman.rogers@gmail.com</p>
@@ -39,7 +39,7 @@ const MaterialLeftSideTabContent:React.FC<TabContentProp> = ({ basicTab }) => {
           </CardBody>
         </TabPane>
         <TabPane tabId="4">
-          <p><strong> In this situation, you would probably do two things:</strong> exit the page, or look for the trusty search bar. If you decide to stick around, a proper search function should take your query and send you to your destination. Problem solved. It's not a perfect experience, but it's a hard one to avoid on larger websites that simply can't link to every piece of content from the homepage.</p>
+          <p><strong> In this situation, you would probably do two things:</strong> {"exit the page, or look for the trusty search bar. If you decide to stick around, a proper search function should take your query and send you to your destination. Problem solved. It's not a perfect experience, but it's a hard one to avoid on larger websites that simply can't link to every piece of content from the homepage."}</p>
         </TabPane>
       </TabContent>
     </div>

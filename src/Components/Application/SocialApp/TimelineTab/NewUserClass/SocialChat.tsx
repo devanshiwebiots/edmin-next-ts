@@ -9,7 +9,7 @@ const SocialChat: React.FC<TimelineDataType> = ({ data }) => {
       {data.socialChatData.map((item, index) => (
         <div className={item.class} key={index}>
           <div className="d-flex">
-            <Image width={50} height={50} className="img-50 m-r-20 rounded-circle image-fluid" alt="user" src={`${ImagePath}/avatar/${item.img}`} />
+            <Image width={50} height={50} className="img-50 m-r-20 rounded-circle image-fluid" alt="user" src={`${ImagePath}/avatar/${item.img}`} unoptimized/>
             <div className="flex-grow-1">
               <span className="f-w-600">
                 {item.name}

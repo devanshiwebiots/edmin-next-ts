@@ -18,7 +18,7 @@ const CreditCardOption:React.FC<PaymentMethodOptionPropsType>= ({paymentMethodNa
             <p>Transferring money securely through your bank account. Mastercard, Visa, Discover, and Stripe are all accepted</p>
           </div>
           <div>
-            <Image width={101} height={50} src={`${ImagePath}/forms/credit-card.png`} alt="card"/>
+            <Image width={101} height={50} src={`${ImagePath}/forms/credit-card.png`} alt="card" unoptimized/>
           </div>
         </div>
         <CreditCardForm />

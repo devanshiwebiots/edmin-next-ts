@@ -14,7 +14,7 @@ const FriendsCard = () => {
             <CardBody>
               <div className="social-img-wrap">
                 <div className="social-img">
-                  <Image width={70} height={70} src={`${ImagePath}/${item.avatar}`} alt="user" />
+                  <Image width={70} height={70} src={`${ImagePath}/${item.avatar}`} alt="user" unoptimized/>
                 </div>
                 <div className="edit-icon">
                   <SvgIcon iconId={item.icon} className="feather stroke-primary" />

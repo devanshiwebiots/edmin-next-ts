@@ -9,7 +9,7 @@ const CommonProductSlide: React.FC<CommonProductSlideProp> = ({ data }) => {
   return (
     <Row className={`product-box ${data.rowClass ? data.rowClass : ""}`}>
       <Col md="5" className="product-img">
-        <Image width={100} height={109} className="img-fluid img-100" src={`${ImagePath}/ecommerce/${data.image}`} alt="product" />
+        <Image width={100} height={109} className="img-fluid img-100" src={`${ImagePath}/ecommerce/${data.image}`} alt="product" unoptimized/>
       </Col>
       <Col md="7" className="product-details text-start">
         <span>

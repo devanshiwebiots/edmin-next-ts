@@ -21,7 +21,7 @@ const UserCardsContainer = () => {
                 <CardBody>
                   <div className="social-img-wrap">
                     <div className="social-img">
-                      <Image width={68} height={68} src={`${ImagePath}/${item.avatar}`} className="img-fluid" alt="user"/>
+                      <Image width={68} height={68} src={`${ImagePath}/${item.avatar}`} className="img-fluid" alt="user" unoptimized/>
                     </div>
                     <div className="edit-icon">
                       <SvgIcon iconId="check-circle" className='feather stroke-primary' />

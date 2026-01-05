@@ -13,12 +13,12 @@ const StatusIndicatorCart = () => {
           <div className="avatar-showcase">
             <div className="avatars">
               <div className="avatar">
-                <Image width={100} height={100} priority className="img-100 rounded-circle" src={`${ImagePath}/avatar/3.jpg`} alt="image" />
+                <Image width={100} height={100} priority className="img-100 rounded-circle" src={`${ImagePath}/avatar/3.jpg`} alt="image" unoptimized/>
                 <div className="status bg-success"></div>
               </div>
               {statusIndicators.map(({ className, src, color }, index) => (
                 <div className="avatar" key={index}>
-                  <Image width={100} height={100} priority className={`${className} rounded-circle`} src={`${ImagePath}/avatar/${src}`} alt="image" />
+                  <Image width={100} height={100} priority className={`${className} rounded-circle`} src={`${ImagePath}/avatar/${src}`} alt="image" unoptimized/>
                   <div className={`status bg-${color}`}></div>
                 </div>
               ))}

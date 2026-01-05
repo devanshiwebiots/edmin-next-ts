@@ -8,7 +8,7 @@ const BlogComment = (props: { data: BlogSingleDataType }) => {
   const {data} = props
   return (
     <div className="d-flex align-self-center">
-      <Image width={74} height={74} className="align-self-center" src={`${ImagePath}/${data.src}`} alt="Generic image" />
+      <Image width={74} height={74} className="align-self-center" src={`${ImagePath}/${data.src}`} alt="Generic image" unoptimized/>
       <div className="flex-grow-1">
         <Row>
           <Col md="4">
